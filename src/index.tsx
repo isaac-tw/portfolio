@@ -8,7 +8,7 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Root from "./routes/root";
+import Root, { loader as rootLoader } from "./routes/root";
 
 import Contact from "./routes/contact";
 import ErrorPage from "./error-page";
@@ -19,11 +19,18 @@ const router = createBrowserRouter([
     element: <Root />,
     // element: <div>Hello world!</div>,
     errorElement: <ErrorPage />,
+    loader: rootLoader,
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      },
+    ],
   },
-  {
-    path: "contacts/:contactId",
-    element: <Contact />,
-  },
+  // {
+  //   path: "contacts/:contactId",
+  //   element: <Contact />,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(

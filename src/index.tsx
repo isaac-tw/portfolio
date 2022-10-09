@@ -9,6 +9,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Root from "./routes/root";
+
+import Contact from "./routes/contact";
 import ErrorPage from "./error-page";
 
 const router = createBrowserRouter([
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
     element: <Root />,
     // element: <div>Hello world!</div>,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "contacts/:contactId",
+    element: <Contact />,
   },
 ]);
 

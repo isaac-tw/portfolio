@@ -1,5 +1,9 @@
-import { Form } from "react-router-dom";
+import { Form, useLoaderData } from "react-router-dom";
+import { getContact } from "../contacts";
 
+export async function loader({ params }: { params: any}) {
+    return getContact(params.contactId);
+}
 interface ContactType {
     first: string;
     last: string;
@@ -10,14 +14,16 @@ interface ContactType {
 }
 
 export default function Contact() {
-    const contact: ContactType = {
-        first: "Your",
-        last: "Name",
-        avatar: "https://placekitten.com/g/200/200",
-        twitter: "your_handle",
-        notes: "Some notes",
-        favorite: true,
-    };
+    const contact = useLoaderData() as ContactType;
+
+    // const contact: ContactType = {
+    //     first: "Your",
+    //     last: "Name",
+    //     avatar: "https://placekitten.com/g/200/200",
+    //     twitter: "your_handle",
+    //     notes: "Some notes",
+    //     favorite: true,
+    // };
 
     return (
         <div id="contact">

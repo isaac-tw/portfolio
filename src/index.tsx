@@ -8,7 +8,10 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Root, { loader as rootLoader } from "./routes/root";
+import Root, {
+  loader as rootLoader,
+  action as rootAction,
+} from "./routes/root";
 
 import Contact from "./routes/contact";
 import ErrorPage from "./error-page";
@@ -20,6 +23,7 @@ const router = createBrowserRouter([
     // element: <div>Hello world!</div>,
     errorElement: <ErrorPage />,
     loader: rootLoader,
+    action: rootAction,
     children: [
       {
         path: "contacts/:contactId",

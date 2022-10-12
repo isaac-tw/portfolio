@@ -4,14 +4,6 @@ import { getContact } from "../contacts";
 export async function loader({ params }: { params: any}) {
     return getContact(params.contactId);
 }
-interface ContactType {
-    first: string;
-    last: string;
-    avatar: string;
-    twitter: string;
-    notes: string;
-    favorite: boolean;
-}
 
 export default function Contact() {
     const contact = useLoaderData() as ContactType;

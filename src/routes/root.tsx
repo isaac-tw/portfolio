@@ -10,15 +10,6 @@ import { getContacts, createContact } from "../contacts";
 export async function action() {
     await createContact();
 }
-interface ContactType {
-    id: string;
-    first: string;
-    last: string;
-    avatar: string;
-    twitter: string;
-    notes: string;
-    favorite: boolean;
-}
 
 export default function Root() {
     const { contacts } = useLoaderData() as any;

@@ -18,7 +18,11 @@ import Contact, {
 } from "./routes/contact";
 
 import ErrorPage from "./error-page";
-import EditContact from "./routes/edit";
+// import EditContact from "./routes/edit";
+import EditContact, {
+  action as editAction,
+} from "./routes/edit";
+
 
 const router = createBrowserRouter([
   {
@@ -38,6 +42,7 @@ const router = createBrowserRouter([
         path: "contacts/:contactId/edit",
         element: <EditContact />,
         loader: contactLoader,
+        action: editAction,
       },
     ],
   },

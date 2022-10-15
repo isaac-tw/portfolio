@@ -11,10 +11,12 @@ export async function action({ request, params }: {
     // request: { formData: () => any },
     // params: { contactId: any }
   }) {
-  console.log('request', request);
-  console.log('params', params);
+  // console.log('request', request);
+  // console.log('params', params);
   const formData = await request.formData();
   const updates = Object.fromEntries(formData);
+  // console.log('formData', formData);
+  // console.log('updates', updates);
   await updateContact(params.contactId, updates);
   return redirect(`/contacts/${params.contactId}`);
 }

@@ -57,7 +57,11 @@ export default function Root() {
                             //     setQuery(e.target.value);
                             // }}
                             onChange={(event) => {
-                                submit(event.currentTarget.form);
+                                const isFirstSearch = q == null;
+                                submit(event.currentTarget.form, {
+                                  replace: !isFirstSearch,
+                                });
+                                // submit(event.currentTarget.form);
                             }}
                         />
                         <div

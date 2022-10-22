@@ -1,0 +1,39 @@
+.nav {
+    align-items: flex-end;
+    display: flex;
+    height: 12.5vh;
+    padding-bottom: 5vh;
+
+    .nav-bar {
+        align-items: center;
+        display: flex;
+        font-size: 1.3rem;
+        justify-content: space-between;
+        width: 100%;
+
+        .icon {
+            border-bottom: 1px solid $mainBlue;
+            color: $mainBlue;
+        }
+
+        .tab-section {
+            color: $darkGrey;
+            display: flex;
+
+            .tabs {
+                display: flex;
+
+                .tab {
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .4;
+                    }
+                }
+
+                .divider {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

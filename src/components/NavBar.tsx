@@ -9,7 +9,7 @@ export default function NavBar() {
     const renderTabs = () => (
         <div className='tab-section'>
             {tabs.map((tab) => (
-                <div className='tabs'>
+                <div className='tabs' key={tab}>
                     <div className='tab'>
                         {tab}
                     </div>

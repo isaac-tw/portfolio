@@ -1,26 +1,55 @@
 .nav {
     align-items: flex-end;
     display: flex;
-    height: 12.5vh;
-    padding-bottom: 5vh;
+    height: 13vh;
+    margin-bottom: 7vh;
+
+    @media only screen and (min-width: $screen-mobile) {
+        height: 8.5vh;
+        margin-bottom: 5vh;
+    }
+    @media only screen and (min-width: $screen-tablet) {
+        height: 7.5vh;
+        margin-bottom: 7vh;
+    }
 
     .nav-bar {
         align-items: center;
-        display: flex;
-        font-size: 1.3rem;
+        display: block;
         justify-content: space-between;
         width: 100%;
 
-        .icon {
-            border-bottom: 1px solid $mainBlue;
-            color: $mainBlue;
+        @media only screen and (min-width: $screen-mobile) {
+            display: flex;
         }
 
-        .tab-section {
-            color: $darkGrey;
+        .icon {
+            color: $mainBlue;
+            font-weight: bold;
+            text-align: left;
+            text-decoration: underline;
+            
             display: flex;
 
-            .tabs {
+            @media only screen and (min-width: $screen-mobile) {
+                display: block;
+            }
+            @media only screen and (min-width: $screen-tablet) {
+                display: flex;
+            }
+        }
+
+        .tabs {
+            color: $darkGrey;
+
+            display: flex;
+            margin-top: 1.4rem;
+            
+            @media only screen and (min-width: $screen-mobile) {
+                margin-top: 0;
+            }
+
+            .elements {
                 display: flex;
 
                 .tab {

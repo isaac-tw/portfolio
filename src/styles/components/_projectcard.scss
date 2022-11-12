@@ -1,0 +1,58 @@
+.card {
+    .image-section {
+        cursor: pointer;
+        position: relative;
+
+        .img {
+            display: block;
+            width: 100%;
+
+            &.--front {
+                opacity: 1;
+                position: absolute;
+                transition: opacity .3s ease-in-out;
+
+                &:hover {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .title {
+        color: rgba(0, 0, 0, 0.75);
+        line-height: 1.6;
+        text-align: left;
+
+        margin-top: 1.2rem;
+        margin-bottom: 0.1rem;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media only screen and (min-width: $screen-mobileOld) {
+            margin-top: .4rem;
+        }
+    
+        @media only screen and (min-width: $screen-mobile) {
+            margin-top: .8rem;
+        }
+    
+        @media only screen and (min-width: $screen-laptop) {
+            margin-top: 1.2rem;
+        }
+    }
+
+    .subtitle {
+        color: rgba(0, 0, 0, 0.35);
+        line-height: 1.2;
+        text-align: left;
+
+        margin-top: 0.3rem;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

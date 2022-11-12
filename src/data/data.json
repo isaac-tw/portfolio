@@ -1,0 +1,86 @@
+{
+    "luggageplus": {
+        "id": "luggageplus",
+        "name": "Luggage+",
+        "subtitle": "A Smart Travel App",
+        "year": 2019,
+        "duration": "3 weeks"
+    },
+    "duplo": {
+        "id": "duplo",
+        "name": "Usability Problems of LEGO Duplo",
+        "subtitle": "When LEGO Meets AR",
+        "year": 2017,
+        "duration": ""
+    },
+    "candle-chair": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair2": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair3": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair4": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair5": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair6": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair7": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair8": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "candle-chair9": {
+        "id": "candle-chair",
+        "name": "Candle Chair",
+        "subtitle": "An alternative for Yield Estimation",
+        "year": 2019,
+        "duration": "4 weeks"
+    },
+    "magprint": {
+        "id": "magprint",
+        "name": "MagPrint",
+        "subtitle": "Magnetic Printer Gizmo",
+        "year": 2018,
+        "duration": "3 weeks"
+    }
+}

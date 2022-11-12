@@ -14,7 +14,7 @@ export default function NavBar() {
                     <div className='tab'>
                         {tab}
                     </div>
-                    {tab !== tabs.at(-1) && <div className='divider'>/</div>}
+                    {tab !== tabs.slice(-1)[0] && <div className='divider'>/</div>}
                 </div>
             ))}
         </div>

@@ -53,13 +53,17 @@
                 display: flex;
 
                 .tab {
-                    &:hover {
-                        cursor: pointer;
-                        opacity: .4;
+                    @media (hover: hover) {
+                        &:hover {
+                            cursor: pointer;
+                            opacity: .4;
+                        }
                     }
                 }
 
                 .divider {
+                    text-align: center;
+
                     width: 20px;
                 }
             }

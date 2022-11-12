@@ -1,5 +1,7 @@
 @import "index";
-@import "App";
-
 @import "abstracts/variables";
+@import "abstracts/fonts";
+
+@import "App";
+@import "components/projectcard";
 @import "layout/header";

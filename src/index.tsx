@@ -4,7 +4,22 @@ import './styles/styles.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { baseTheme } from './data/baseTheme'
+import { baseTheme } from './data/baseTheme';
+import ReactGA from "react-ga4";
+
+ReactGA.initialize([
+  {
+    trackingId: "G-7PKHRMDY9J",
+    gaOptions: {
+      debug_mode: true,
+    },
+    gtagOptions: {
+      debug_mode: true,
+    },
+  },
+]);
+
+ReactGA.send("Hello pageview!");
 
 const theme = createTheme(baseTheme);
 const root = ReactDOM.createRoot(

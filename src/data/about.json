@@ -1,0 +1,77 @@
+{
+    "EDUCATION": [
+        {
+            "Degree": "MA / MSc, Innovation Design Engineering",
+            "School": "Royal College of Art / Imperial College London",
+            "Duration": "2018 - 2020",
+            "Additional": "Scholarship: GSSA, Ministry of Education, Taiwan"
+        },
+        {
+            "Degree": "MSc, Industrial Design",
+            "School": "National Cheng Kung University, Taiwan",
+            "Duration": "2014 - 2016"
+        },
+        {
+            "Degree": "BSc, Computer Science and Information Engineering",
+            "School": "National Taiwan Normal University, Taiwan",
+            "Duration": "2008 - 2012"
+        }
+    ],
+    "EXPERIENCE": [
+        {
+            "Title": "Business Development Assistant / Co-founder",
+            "Company name": "",
+            "Duration": "04.2016 - Present",
+            "Additional": "Funding: Ministry of Culture, Taiwan"
+        },
+        {
+            "Title": "Teaching Assistant",
+            "Company name": "Department of Industrial Design, National Cheng Kung University",
+            "Duration": "03.2015 - 05.2016"
+        },
+        {
+            "Title": "Executive Editor",
+            "Company name": "College of Planning & Design, National Cheng Kung University",
+            "Duration": "06.2015 - 10.2015"
+        },
+        {
+            "Title": "Assistant",
+            "Company name": "Economic Development Section of Daan District Office, Taipei City",
+            "Duration": "07.2012 - 07.2013"
+        }
+    ],
+    "ACTIVITIES": [
+        {
+            "Name": "Taiwan Design Industry Development Project",
+            "Organization": "Ministry of Economic Affairs, Taiwan",
+            "Duration": "12.2016 - 09.2017"
+        },
+        {
+            "Name": "2017 Creative Expo Taiwan",
+            "Duration": "19 - 23.04.2017"
+        },
+        {
+            "Name": "Dream Fulfilling Project",
+            "Organization": "Ministry of Culture, Taiwan",
+            "Duration": "04.2016 - 09.2016"
+        },
+        {
+            "Name": "Design and Culture Seminar",
+            "Duration": "13.05.2016"
+        },
+        {
+            "Name": "School Representative",
+            "Organization": "Museum of Contemporary Art, Taipei",
+            "Duration": "08.2010 - 02.2011"
+        },
+        {
+            "Name": "IT Volunteer",
+            "Organization": "Department of Tourism, Lienchiang County Government",
+            "Duration": "12 - 14.11.2010"
+        },
+        {
+            "Name": "Volunteer, Taipei Fringe Festival",
+            "Duration": "28.08.2010"
+        }
+    ]
+}

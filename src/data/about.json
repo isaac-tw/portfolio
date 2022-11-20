@@ -1,5 +1,6 @@
 {
-    "EDUCATION": [
+    "Description": "Isaac (Wei-Chun) Huang is a multidisciplinary Taiwanese designer with backgrounds in industrial design and computer science. He is interested in technology and likes to bring innovative ideas to life. He doesn’t really like rules and doesn’t mind breaking them if necessary. Before studying Innovation Design Engineering. He and his partner won a pitch and got fund from the Taiwan Ministry of Culture and founded a company which committed to original design and \"Made-in-Taiwan\" illustrated goods.",
+    "Education": [
         {
             "Degree": "MA / MSc, Innovation Design Engineering",
             "School": "Royal College of Art / Imperial College London",
@@ -17,7 +18,7 @@
             "Duration": "2008 - 2012"
         }
     ],
-    "EXPERIENCE": [
+    "Experience": [
         {
             "Title": "Business Development Assistant / Co-founder",
             "Company name": "",
@@ -40,7 +41,7 @@
             "Duration": "07.2012 - 07.2013"
         }
     ],
-    "ACTIVITIES": [
+    "Activities": [
         {
             "Name": "Taiwan Design Industry Development Project",
             "Organization": "Ministry of Economic Affairs, Taiwan",

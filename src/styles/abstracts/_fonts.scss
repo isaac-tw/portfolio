@@ -7,6 +7,9 @@
     .rfs-sub {
         font-size: 1.8rem;
     }
+    .rfs-cap {
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (min-width: $screen-mobile) {
@@ -15,6 +18,9 @@
     }
     .rfs-sub {
         font-size: 1.4rem;
+    }
+    .rfs-cap {
+        font-size: 1.2rem;
     }
 }
 
@@ -25,6 +31,9 @@
     .rfs-sub {
         font-size: 1.7rem;
     }
+    .rfs-cap {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: $screen-laptop) {
@@ -33,5 +42,8 @@
     }
     .rfs-sub {
         font-size: 2rem;
+    }
+    .rfs-cap {
+        font-size: 1.8rem;
     }
 }

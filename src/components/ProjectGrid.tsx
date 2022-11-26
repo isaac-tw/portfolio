@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import ProjectCard from './ProjectCard'
-import projectsData from '../data/projects.json'
+import projects from '../data/projects.json'
 
 export default function ProjectGrid() {
   return (
@@ -23,7 +23,7 @@ export default function ProjectGrid() {
         }}
       >
         {
-          Object.entries(projectsData).map(([key, value]) => (
+          Object.entries(projects).map(([key, value]) => (
             <Grid key={key} mobileOld={12} mobile={6} laptop={4}>
               <ProjectCard
                 id={value.id}

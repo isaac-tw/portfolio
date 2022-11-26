@@ -1,8 +1,95 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import aboutData from '../data/about.json'
+import about from '../data/about.json'
 
-export default function ProjectGrid() {
+interface Education {
+  Degree: string;
+  School: string;
+  Duration: string;
+  Additional?: string;
+}
+interface Experience {
+  Title: string;
+  'Company name': string;
+  Duration: string;
+  Additional?: string;
+}
+interface Activity {
+  Name: string;
+  Organization?: string;
+  Duration: string;
+  Additional?: string;
+}
+interface Skill {
+  Language?: string;
+  '3D Modeling'?: string;
+  Adobe?: string;
+  Programming?: string;
+  Other?: string;
+}
+
+interface About {
+  Description: string;
+  Education: Education[];
+  Experience: Experience[];
+  Activity: Activity[];
+  Skill: Skill[];
+}
+
+const aboutData: About = about;
+
+export default function AboutGrid() {
+  function renderAbout(key: string, value: any) {
+    switch(key) {
+      case 'Description':
+        return (
+          <div className="about">
+            <div className="description rfs-main">
+              {value.toString()}
+            </div>
+          </div>
+        );
+      case 'Education':
+        return (value.map((element: Education, index: number) => {
+          return (
+          <div className="about" key={index}>
+            <div className="title rfs-main">{element['Degree']}</div>
+            <div className="subtitle rfs-main">{element['School']}</div>
+            <div className="caption rfs-cap">{element['Duration']}</div>
+            <div className="caption rfs-cap">{element['Additional']}</div>
+          </div>
+        )}));
+      case 'Experience':
+        return (value.map((element: Experience, index: number) => {
+          return (
+          <div className="about" key={index}>
+            <div className="title rfs-main">{element['Title']}</div>
+            <div className="subtitle rfs-main">{element['Company name']}</div>
+            <div className="caption rfs-cap">{element['Duration']}</div>
+            <div className="caption rfs-cap">{element['Additional']}</div>
+          </div>
+        )}));
+      case 'Activity':
+        return (value.map((element: Activity, index: number) => {
+          return (
+          <div className="about" key={index}>
+            <div className="title rfs-main">{element['Name']}</div>
+            <div className="subtitle rfs-main">{element['Organization']}</div>
+            <div className="caption rfs-cap">{element['Duration']}</div>
+          </div>
+        )}));
+      case 'Skill':
+        return (value.map((element: Skill, index: number) => {
+          console.log('element', element);
+          return (
+          <div className="about" key={index}>
+            <div className="title rfs-main">{Object.keys(element)[0]}</div>
+            <div className="subtitle rfs-main">{Object.values(element)[0]}</div>
+          </div>
+        )}));
+    }
+  }
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -24,10 +111,7 @@ export default function ProjectGrid() {
         {
           Object.entries(aboutData).map(([key, value]) => (
             <Grid key={key} mobileOld={12} laptop={6}>
-              { key === "Description" && (
-                  <div>{value.toString()}</div>
-                )
-              }
+              {renderAbout(key, value)}
             </Grid>
           ))
         }

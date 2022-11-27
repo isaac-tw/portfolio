@@ -1,5 +1,5 @@
 .about {
-    color: rgba(0, 0, 0, 0.75);
+    color: $dark-grey;
     .description {
         line-height: 1.6;
         text-align: left;
@@ -54,7 +54,7 @@
     }
 
     .caption {
-        color: rgba(0, 0, 0, 0.45);
+        color: $light-grey;
         line-height: 1.2;
         text-align: left;
 

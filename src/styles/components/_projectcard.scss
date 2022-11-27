@@ -22,7 +22,7 @@
     }
 
     .title {
-        color: rgba(0, 0, 0, 0.75);
+        color: $dark-grey;
         line-height: 1.6;
         text-align: left;
 
@@ -36,18 +36,18 @@
         @media only screen and (min-width: $screen-mobileOld) {
             margin-top: .4rem;
         }
-    
+
         @media only screen and (min-width: $screen-mobile) {
             margin-top: .8rem;
         }
-    
+
         @media only screen and (min-width: $screen-laptop) {
             margin-top: 1.2rem;
         }
     }
 
     .subtitle {
-        color: rgba(0, 0, 0, 0.45);
+        color: $light-grey;
         line-height: 1.2;
         text-align: left;
 

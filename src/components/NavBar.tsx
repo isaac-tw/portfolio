@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 const tabs: string[] = ['Work', 'Misc', 'About', 'Contact'];
 
 export default function NavBar() {
@@ -11,9 +13,9 @@ export default function NavBar() {
         <div className='tabs'>
             {tabs.map((tab) => (
                 <div className='elements' key={tab}>
-                    <div className='tab'>
-                        {tab}
-                    </div>
+                    <nav className='tab'>
+                        <NavLink to={tab === 'Work' ? '/' : tab.toLowerCase()}>{tab}</NavLink>
+                    </nav>
                     {tab !== tabs.slice(-1)[0] && <div className='divider'>/</div>}
                 </div>
             ))}

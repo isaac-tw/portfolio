@@ -11,7 +11,13 @@ export default function NavBar() {
         <div className='tabs'>
             <nav className="elements">
                 <NavLink to="/">Work</NavLink><div className='divider'>/</div>
-                <NavLink to="misc">Misc</NavLink><div className='divider'>/</div>
+                <a
+                    href="https://www.instructables.com/A-Cup-of-PC/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    Misc
+                </a><div className='divider'>/</div>
                 <NavLink to="about">About</NavLink><div className='divider'>/</div>
                 <span onClick={() => console.log('Contact')}>Contact</span>
             </nav>

@@ -1,24 +1,20 @@
-import { NavLink } from 'react-router-dom'
-
-const tabs: string[] = ['Work', 'Misc', 'About', 'Contact'];
+import { Link, NavLink } from 'react-router-dom'
 
 export default function NavBar() {
     const renderIcon = () => (
-        <div className='icon'>
+        <Link to="/" className='icon'>
             <div className='first-name'>Wei-Chun&nbsp;</div>
             <div className='last-name'>Huang</div>
-        </div>
+        </Link>
     );
     const renderTabs = () => (
         <div className='tabs'>
-            {tabs.map((tab) => (
-                <div className='elements' key={tab}>
-                    <nav className='tab'>
-                        <NavLink to={tab === 'Work' ? '/' : tab.toLowerCase()}>{tab}</NavLink>
-                    </nav>
-                    {tab !== tabs.slice(-1)[0] && <div className='divider'>/</div>}
-                </div>
-            ))}
+            <nav className="elements">
+                <NavLink to="/">Work</NavLink><div className='divider'>/</div>
+                <NavLink to="misc">Misc</NavLink><div className='divider'>/</div>
+                <NavLink to="about">About</NavLink><div className='divider'>/</div>
+                <span onClick={() => console.log('Contact')}>Contact</span>
+            </nav>
         </div>
     );
 

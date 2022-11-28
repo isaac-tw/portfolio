@@ -52,12 +52,16 @@
             .elements {
                 display: flex;
 
-                .tab {
+                a, span {
                     @media (hover: hover) {
                         &:hover {
                             cursor: pointer;
                             opacity: .4;
                         }
+                    }
+
+                    &.active {
+                        opacity: .4;
                     }
                 }
 

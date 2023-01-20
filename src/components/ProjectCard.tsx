@@ -10,12 +10,12 @@ export default function ProjectCard(props: {
       <div className='image-section'>
         <img
           className='img --front'
-          src={require(`../assets/${props.id}/${props.id}_thumbnail-01_IsaacHuang.jpg`)}
+          src={require(`../assets/${props.id}/thumbnails/${props.id}_thumbnail-01_IsaacHuang.jpg`)}
           alt={`${props.name}`}
         />
         <img
           className='img'
-          src={require(`../assets/${props.id}/${props.id}_thumbnail-02_IsaacHuang.jpg`)}
+          src={require(`../assets/${props.id}/thumbnails/${props.id}_thumbnail-02_IsaacHuang.jpg`)}
           alt={`${props.name}`}
         />
       </div>

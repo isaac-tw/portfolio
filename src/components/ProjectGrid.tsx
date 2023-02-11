@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import ProjectCard from './ProjectCard'
-import projects from '../data/projects.json'
+import projects from '../data/projects_test.json'
 
 export default function ProjectGrid() {
   return (

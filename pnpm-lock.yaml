@@ -15,6 +15,7 @@ specifiers:
   '@types/node': ^16.11.62
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
+  '@types/react-lazyload': ^3.2.0
   '@types/testing-library__jest-dom': ^5.14.5
   gh-pages: ^4.0.0
   localforage: ^1.10.0
@@ -43,6 +44,7 @@ dependencies:
   '@types/node': 16.11.64
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
+  '@types/react-lazyload': 3.2.0
   '@types/testing-library__jest-dom': 5.14.5
   localforage: 1.10.0
   match-sorter: 6.3.1
@@ -2725,6 +2727,12 @@ packages:
 
   /@types/react-is/17.0.3:
     resolution: {integrity: sha512-aBTIWg1emtu95bLTLx0cpkxwGW3ueZv71nE2YFBpL8k/z5czEW8yYpOo8Dp+UUAFAtKwNaOsh/ioSeQnWlZcfw==}
+    dependencies:
+      '@types/react': 18.0.21
+    dev: false
+
+  /@types/react-lazyload/3.2.0:
+    resolution: {integrity: sha512-4+r+z8Cf7L/mgxA1vl5uHx5GS/8gY2jqq2p5r5WCm+nUsg9KilwQ+8uaJA3EUlLj57AOzOfGGwwRJ5LOVl8fwA==}
     dependencies:
       '@types/react': 18.0.21
     dev: false

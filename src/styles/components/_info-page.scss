@@ -1,0 +1,16 @@
+.info-page__cover {
+  position: relative;
+}
+
+.info-page__content {
+  background-color: white;
+  padding-bottom: 5vw;
+  position: sticky;
+}
+
+.info-page__year-duration {
+  color: $dark-grey;
+  text-align: right;
+  text-transform: capitalize;
+  padding: 1rem;
+}

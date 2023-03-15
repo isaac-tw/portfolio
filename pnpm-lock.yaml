@@ -23,9 +23,11 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-ga4: ^1.4.1
+  react-in-viewport: 1.0.0-alpha.29
   react-lazyload: ^3.2.0
   react-router-dom: ^6.4.3
   react-scripts: 5.0.1
+  react-use-scroll-direction: ^0.1.0
   sass: ^1.55.0
   sass-loader: ^13.1.0
   sort-by: ^1.2.0
@@ -51,9 +53,11 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-ga4: 1.4.1
+  react-in-viewport: 1.0.0-alpha.29_biqbaboplfbrettd7655fr4n2y
   react-lazyload: 3.2.0_biqbaboplfbrettd7655fr4n2y
   react-router-dom: 6.4.3_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_7tsfv4zwsxbpuu6larobvvbwxa
+  react-use-scroll-direction: 0.1.0_react@18.2.0
   sass: 1.55.0
   sass-loader: 13.1.0_sass@1.55.0+webpack@5.74.0
   sort-by: 1.2.0
@@ -5589,6 +5593,12 @@ packages:
     hasBin: true
     dev: false
 
+  /history/5.3.0:
+    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
+    dependencies:
+      '@babel/runtime': 7.19.0
+    dev: false
+
   /hoist-non-react-statics/3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
@@ -8445,6 +8455,17 @@ packages:
     resolution: {integrity: sha512-ioBMEIxd4ePw4YtaloTUgqhQGqz5ebDdC4slEpLgy2sLx1LuZBC9iYCwDymTXzcntw6K1dHX183ulP32nNdG7w==}
     dev: false
 
+  /react-in-viewport/1.0.0-alpha.29_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-48woFq8EUWl3WWAPeyPu5T5KR26G3q8Gs64YXMRQq7aIP5YBzHIN2GvoFwdXDhT19pwcOPmlkSAYWMt0+d3ydw==}
+    peerDependencies:
+      react: ^16.8.3 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.3 || ^17.0.0 || ^18.0.0
+    dependencies:
+      hoist-non-react-statics: 3.3.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -8602,6 +8623,16 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-use-scroll-direction/0.1.0_react@18.2.0:
+    resolution: {integrity: sha512-dOEC+rniLzeJLD5gaPhXUNp7Hd2uKqW4f246FJkCW9SS2pqIKEqBu89jxhXfaf27Vemn/UNBtNSsguDVZo7qPg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      history: 5.3.0
+      react: 18.2.0
     dev: false
 
   /react/18.2.0:

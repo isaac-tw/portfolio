@@ -1,0 +1,21 @@
+.hoverable-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &--front {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        opacity: 1;
+        position: absolute;
+        transition: opacity .3s ease-in-out;
+
+        @media (hover: hover) {
+            &:hover {
+                opacity: 0;
+            }
+        }
+    }
+}

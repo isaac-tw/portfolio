@@ -26,7 +26,7 @@ export default function NavBar() {
 
     return (
         <div className='nav'>
-            <div className='nav-bar rfs-main'>
+            <div className='nav__bar rfs-main'>
                 {renderIcon()}
                 {renderTabs()}
             </div>

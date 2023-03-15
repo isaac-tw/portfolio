@@ -1,75 +1,86 @@
 .nav {
+    background-color: white;
+
     align-items: flex-end;
     display: flex;
-    height: 13vh;
-    margin-bottom: 7vh;
+
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    height: 28vw;
+    margin-bottom: 8vw;
+    padding-bottom: 6vw;
 
     @media only screen and (min-width: $screen-mobile) {
-        height: 8.5vh;
-        margin-bottom: 5vh;
+        height: 14.5vw;
+        margin-bottom: 5vw;
+        padding-bottom: 3.5vw;
     }
     @media only screen and (min-width: $screen-tablet) {
-        height: 7.5vh;
-        margin-bottom: 7vh;
+        height: 6.5vw;
+        margin-bottom: 4.5vw;
+        padding-bottom: 2vw;
     }
 
-    .nav-bar {
-        align-items: center;
-        display: block;
-        justify-content: space-between;
-        width: 100%;
+}
+
+.nav__bar {
+    align-items: center;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+
+    @media only screen and (min-width: $screen-mobile) {
+        display: flex;
+    }
+
+    .icon {
+        color: $main-blue;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: underline;
+        
+        display: flex;
 
         @media only screen and (min-width: $screen-mobile) {
+            display: block;
+        }
+        @media only screen and (min-width: $screen-tablet) {
             display: flex;
         }
+    }
 
-        .icon {
-            color: $main-blue;
-            font-weight: bold;
-            text-align: left;
-            text-decoration: underline;
-            
-            display: flex;
+    .tabs {
+        color: $dark-grey;
 
-            @media only screen and (min-width: $screen-mobile) {
-                display: block;
-            }
-            @media only screen and (min-width: $screen-tablet) {
-                display: flex;
-            }
+        display: flex;
+        margin-top: 1.4rem;
+        
+        @media only screen and (min-width: $screen-mobile) {
+            margin-top: 0;
         }
 
-        .tabs {
-            color: $dark-grey;
-
+        .elements {
             display: flex;
-            margin-top: 1.4rem;
-            
-            @media only screen and (min-width: $screen-mobile) {
-                margin-top: 0;
-            }
 
-            .elements {
-                display: flex;
-
-                a, span {
-                    @media (hover: hover) {
-                        &:hover {
-                            cursor: pointer;
-                            opacity: .4;
-                        }
-                    }
-
-                    &.active {
+            a, span {
+                @media (hover: hover) {
+                    &:hover {
+                        cursor: pointer;
                         opacity: .4;
                     }
                 }
 
-                .divider {
-                    text-align: center;
-
-                    width: 20px;
+                &.active {
+                    opacity: .4;
                 }
+            }
+
+            .divider {
+                text-align: center;
+
+                width: 20px;
             }
         }
     }

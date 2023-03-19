@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.072b40e2.css",
-    "main.js": "/portfolio/static/js/main.69a8d2ae.js",
+    "main.css": "/portfolio/static/css/main.30db1a44.css",
+    "main.js": "/portfolio/static/js/main.cc1a03c6.js",
     "static/js/976.e7e26451.chunk.js": "/portfolio/static/js/976.e7e26451.chunk.js",
     "static/media/duplo_details-11_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-11_IsaacHuang.c499e72d5a530f771bf6.jpg",
     "static/media/searching-ball_details-07_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-07_IsaacHuang.104da5c442767cc30c5c.jpg",
@@ -69,12 +69,12 @@
     "static/media/candle-chair_thumbnail-01_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_thumbnail-01_IsaacHuang.541bc1b0ba9ceaba4017.jpg",
     "static/media/candle-chair_thumbnail-02_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_thumbnail-02_IsaacHuang.cb00548b799689c0013d.jpg",
     "index.html": "/portfolio/index.html",
-    "main.072b40e2.css.map": "/portfolio/static/css/main.072b40e2.css.map",
-    "main.69a8d2ae.js.map": "/portfolio/static/js/main.69a8d2ae.js.map",
+    "main.30db1a44.css.map": "/portfolio/static/css/main.30db1a44.css.map",
+    "main.cc1a03c6.js.map": "/portfolio/static/js/main.cc1a03c6.js.map",
     "976.e7e26451.chunk.js.map": "/portfolio/static/js/976.e7e26451.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.072b40e2.css",
-    "static/js/main.69a8d2ae.js"
+    "static/css/main.30db1a44.css",
+    "static/js/main.cc1a03c6.js"
   ]
 }

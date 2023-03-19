@@ -111,6 +111,20 @@
         "year": 2019,
         "duration": "3 weeks"
     },
+    "searching-ball": {
+        "id": "searching-ball",
+        "name": "Searching Ball",
+        "subtitle": "When Smartphone Meets Robot Vacuum",
+        "year": 2016,
+        "duration": ""
+    },
+    "searching-ball2": {
+        "id": "searching-ball",
+        "name": "Searching Ball",
+        "subtitle": "When Smartphone Meets Robot Vacuum",
+        "year": 2016,
+        "duration": ""
+    },
     "duplo": {
         "id": "duplo",
         "name": "Usability Problems of LEGO Duplo",

@@ -1,5 +1,14 @@
 .info-page__cover {
-  position: relative;
+  position: sticky;
+  // top = height + margin-bottom + padding-bottom of the nav
+  top: 42vw;
+
+  @media only screen and (min-width: $screen-mobile) {
+      top: 23vw;
+  }
+  @media only screen and (min-width: $screen-tablet) {
+      top: 13vw;
+  }
 }
 
 .info-page__content {

@@ -18,7 +18,7 @@ export default function ProjectCard({
   return (
     <div className="project-card">
       <div className="project-card__image-section">
-        <Link to={id}>
+        <Link to={`/work/${id}`}>
           <LazyLoad>
             <img
               className="hoverable-img--front"

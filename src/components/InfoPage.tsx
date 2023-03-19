@@ -1,36 +1,35 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import DetailBlock from "./DetailBlock";
+import projects from '../data/projects.json'
+import { useParams } from 'react-router-dom';
 import { useScrollDirection } from "react-use-scroll-direction";
 import { getMaxHeight } from "../utils/utils";
 
-const project = {
-  id: "luggageplus",
-  name: "Luggage+",
-  subtitle: "A Smart Travel App",
-  year: 2019,
-  duration: "3 weeks",
-  imageRatio: "4:3",
-  details: {
-    "luggageplus_details-01_IsaacHuang": "jpg",
-    "luggageplus_details-02_IsaacHuang": "jpg",
-    "luggageplus_details-03_IsaacHuang": "jpg",
-    "luggageplus_details-04_IsaacHuang": "jpg",
-    "luggageplus_details-05_IsaacHuang": "jpg",
-    "luggageplus_details-06_IsaacHuang": "jpg",
-    "luggageplus_details-07_IsaacHuang": "jpg",
-    "luggageplus_details-08_IsaacHuang": "jpg",
-    "luggageplus_details-09_IsaacHuang": "jpg",
-    "luggageplus_details-10_IsaacHuang": "jpg",
-    "luggageplus_details-11_IsaacHuang": "jpg",
-    "luggageplus_details-12_IsaacHuang": "jpg",
-  },
-};
+interface Project {
+  id: string,
+  name: string,
+  subtitle: string,
+  year: number,
+  duration: string,
+  imageRatio: string,
+  details: object,
+}
+
+interface Projects {
+  luggageplus: Project,
+  duplo: Project,
+  "candle-chair": Project,
+  magprint: Project,
+}
 
 export default function InfoPage() {
+  const { projectId } = useParams();
+  const project =  projects[projectId as keyof Projects];
+
   const lazyLoadHeight = getMaxHeight(
     document.body.clientWidth,
-    project.imageRatio
+    project.imageRatio,
   );
   const { isScrollingDown } = useScrollDirection();
 
@@ -56,7 +55,8 @@ export default function InfoPage() {
           />
         </LazyLoad>
         <div className="info-page__year-duration rfs-main">
-          {project.year} / {project.duration}
+          {project.year}
+          {project.duration ? <span> / {project.duration}</span>  : null}
         </div>
       </div>
       <div className="info-page__content">

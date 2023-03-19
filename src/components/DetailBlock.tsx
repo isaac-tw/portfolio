@@ -19,25 +19,24 @@ export default function DetailBlock({
   const { inViewport } = useInViewport(containerRef);
 
   return (
-    <Fade
-      in={inViewport || !isScrollingDown}
-      easing={transitionEasing}
-      ref={containerRef}
-    >
-      <div>
-        <LazyLoad height={lazyLoadHeight}>
-          <img
-            src={url}
-            alt={imageName}
-            width="1920px"
-            height="1080px"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </LazyLoad>
-      </div>
-    </Fade>
+    <div className="detail-block">
+      <Fade
+        in={inViewport || !isScrollingDown}
+        easing={transitionEasing}
+        ref={containerRef}
+      >
+        <div>
+          <LazyLoad height={lazyLoadHeight}>
+            <img
+              className="detail-block__img"
+              src={url}
+              alt={imageName}
+              width="1920px"
+              height="1080px"
+            />
+          </LazyLoad>
+        </div>
+      </Fade>
+    </div>
   );
 }

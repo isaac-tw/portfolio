@@ -4,24 +4,25 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from '../components/Home';
-import ProjectGrid from '../components/ProjectGrid';
 import About from '../components/About';
-import InfoPage from '../components/InfoPage';
+import ErrorPage from '../components/ErrorPage';
+import Home from '../components/Home';
+import InfoPage, {
+  loader as infoPageLoader,
+} from '../components/InfoPage';
+import ProjectGrid from '../components/ProjectGrid';
 
 const routes = createRoutesFromElements(
   <Route path="/" element={<Home />}>
     <Route index element={<ProjectGrid />} />
     <Route path="about" element={<About />} />
-    <Route path="*" element={<div>ERROR</div>} />
     <Route
       path="work/:projectId"
       element={<InfoPage />}
-      loader={({ params }: any) => {
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-        params.projectId;
-      }}
+      loader={infoPageLoader}
+      errorElement={<ErrorPage subject="Project" />}
     />
+    <Route path="*" element={<ErrorPage subject="Page" />} />
   </Route>
 );
 

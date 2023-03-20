@@ -8,8 +8,10 @@ import router from './routes/configure'
 // 3. Under construction
 // 4. Propotion
 // 5. Favicon
-// 6. Error page
+// (DONE) 6. Error page
 // 7. Linter
+// 8. Remove all default stuffs
+// 9. Update all ts in codebase
 
 function App() {
   return (

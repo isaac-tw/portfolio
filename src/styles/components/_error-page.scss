@@ -1,0 +1,58 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+}
+
+.error-page__content {
+    margin-top: 10vw;
+    display: flex;
+
+    @media only screen and (min-width: $screen-mobile) {
+        margin-top: 6vw;
+    }
+    @media only screen and (min-width: $screen-tablet) {
+        margin-top: 4vw;
+    }
+}
+
+.error-page__message {
+    color: $dark-grey;
+    font-size: 3rem;
+    font-weight: lighter;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media only screen and (min-width: $screen-mobile) {
+        font-size: 4.5rem;
+    }
+    @media only screen and (min-width: $screen-tablet) {
+        font-size: 6rem;
+    }
+}
+
+.error-page__word {
+    &--subject {
+        font-weight: lighter;
+    }
+    &--not-found {
+        font-weight: 500;
+    }
+}
+
+.error-page__img {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+
+    @media only screen and (min-width: $screen-mobile) {
+        width: 180px;
+        height: 180px;
+        margin-left: 40px;
+    }
+    @media only screen and (min-width: $screen-tablet) {
+        width: 250px;
+        height: 250px;
+    }
+}

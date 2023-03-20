@@ -23,6 +23,18 @@ interface Projects {
   magprint: Project,
 }
 
+export async function loader({ params }: any) {
+  const project =  projects[params.projectId as keyof Projects];
+
+  if (!project) {
+    throw new Response("", {
+      status: 404,
+      statusText: "Not Found",
+    });
+  }
+  return { project };
+}
+
 export default function InfoPage() {
   const { projectId } = useParams();
   const project =  projects[projectId as keyof Projects];

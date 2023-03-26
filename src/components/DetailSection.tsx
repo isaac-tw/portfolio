@@ -11,20 +11,47 @@ interface Item {
   file: string;
   format: string;
   dimensions?: string;
+  keyWord?: string;
   src?: string;
 }
 
-const renderDetail = (id: string, item: Item, clientWidth: number) => {
+const renderDetail = (id: string, item: Item, width: number, height: number) => {
   switch (item.format) {
+    case "quote":
+      return (
+        <div className="detail-block__quote rfs-quote" style={{ height }}>
+          {item.file}
+        </div>
+      );
+    case "linkQuote":
+      const keywordIndex = item.file.indexOf(item.keyWord || "");
+      if (keywordIndex === -1) return null;
+      return (
+        <div className="detail-block__link-quote rfs-quote" style={{ height }}>
+          <span>
+            {item.file.substring(0, keywordIndex)}
+          </span>
+          &nbsp;
+          <a
+            className="detail-block__link-quote--link"
+            href={item.src}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {item.keyWord}
+          </a>
+        </div>
+      );
     case "jpg":
     case "png":
     case "gif":
       return (
         <img
-          {...getWidthAndHeight(clientWidth, item.dimensions)}
           className="detail-block__img"
           src={require(`../assets/${id}/details/${id}_${item.file}_IsaacHuang.${item.format}`)}
           alt={item.file}
+          width={width}
+          height={height}
         />
       );
     case "vimeo":
@@ -73,6 +100,7 @@ export default function DetailSection({
           <Box sx={{ flexGrow: 1 }}>
             <Grid container>
               {detail.map((item) => {
+                const { width, height } = getWidthAndHeight(clientWidth, item.dimensions);
                 return (
                   <Grid
                     mobileOld={12}
@@ -80,8 +108,8 @@ export default function DetailSection({
                     laptop={12 / detail.length}
                     key={item.file}
                   >
-                    <LazyLoad height={getWidthAndHeight(clientWidth, item.dimensions).height}>
-                      {renderDetail(id, item, clientWidth)}
+                    <LazyLoad height={height}>
+                      {renderDetail(id, item, width, height)}
                     </LazyLoad>
                   </Grid>
                 );

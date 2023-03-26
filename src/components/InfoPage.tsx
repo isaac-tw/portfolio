@@ -68,11 +68,7 @@ export default function InfoPage() {
         </div>
       </div>
       <div className="info-page__content">
-        {project.details.map((detail, index) => {
-          console.log('index', project.id)
-          console.log('index', index)
-          console.log('detail', detail)
-          return (
+        {project.details.map((detail, index) => (
           <DetailSection
             clientWidth={clientWidth}
             detail={detail}
@@ -80,7 +76,7 @@ export default function InfoPage() {
             isScrollingDown={isScrollingDown}
             key={index}
           />
-        )})}
+        ))}
       </div>
     </div>
   );

@@ -7,79 +7,86 @@
   "details": [
     [
       {
+        "file": "I believe we will have our personal inventory database in the future",
+        "format": "quote",
+        "dimensions": "2x1"
+      }
+    ],
+    [
+      {
+        "dimensions": "A3",
         "file": "details-01",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-02",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-03",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-04",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-05",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-06",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-07",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-08",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-09",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-10",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-11",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
@@ -91,9 +98,9 @@
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-12",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ]
   ]

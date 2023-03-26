@@ -2,6 +2,36 @@
   margin-bottom: 2vw;
 }
 
+.detail-block__quote {
+  color: $dark-grey;
+  font-weight: bolder;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+
+.detail-block__link-quote {
+  color: $dark-grey;
+  // font-weight: bolder;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  &--link {
+    color: $main-blue;
+  }
+}
+
 .detail-block__img {
   width: 100%;
   height: auto;

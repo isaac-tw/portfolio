@@ -7,51 +7,58 @@
   "details": [
     [
       {
+        "dimensions": "2x1",
+        "file": "What would you design if your company get the techniques from hTC and iRobot?",
+        "format": "quote"
+      }
+    ],
+    [
+      {
+        "dimensions": "A4",
         "file": "details-01",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-02",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-03",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-04",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-05",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-06",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A4",
         "file": "details-07",
-        "format": "jpg",
-        "dimensions": "A4"
+        "format": "jpg"
       }
     ]
   ]

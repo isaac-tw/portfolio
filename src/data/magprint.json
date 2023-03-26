@@ -7,58 +7,65 @@
   "details": [
     [
       {
+        "dimensions": "2x1",
+        "file": "The Physical Photoshop",
+        "format": "quote"
+      }
+    ],
+    [
+      {
+        "dimensions": "A3",
         "file": "details-01",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-02",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-03",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-04",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-05",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-06",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ],
     [
       {
-        "file": "details-07",
+        "dimensions": "640x360",
         "format": "gif",
-        "dimensions": "640x360"
+        "file": "details-07"
       }
     ],
     [
       {
+        "dimensions": "A3",
         "file": "details-08",
-        "format": "jpg",
-        "dimensions": "A3"
+        "format": "jpg"
       }
     ]
   ]

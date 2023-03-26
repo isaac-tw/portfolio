@@ -10,6 +10,9 @@
     .rfs-cap {
         font-size: 1.6rem;
     }
+    .rfs-quote {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (min-width: $screen-mobile) {
@@ -21,6 +24,9 @@
     }
     .rfs-cap {
         font-size: 1.2rem;
+    }
+    .rfs-quote {
+        font-size: 1.7rem;
     }
 }
 
@@ -34,6 +40,9 @@
     .rfs-cap {
         font-size: 1.5rem;
     }
+    .rfs-quote {
+        font-size: 2.1rem;
+    }
 }
 
 @media only screen and (min-width: $screen-laptop) {
@@ -45,5 +54,8 @@
     }
     .rfs-cap {
         font-size: 1.8rem;
+    }
+    .rfs-quote {
+        font-size: 2.5rem;
     }
 }

@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.764b54e8.css",
-    "main.js": "/portfolio/static/js/main.954f15e8.js",
+    "main.css": "/portfolio/static/css/main.761af0f6.css",
+    "main.js": "/portfolio/static/js/main.dd424401.js",
     "static/js/976.e7e26451.chunk.js": "/portfolio/static/js/976.e7e26451.chunk.js",
+    "static/media/candle-chair_details-06_IsaacHuang.gif": "/portfolio/static/media/candle-chair_details-06_IsaacHuang.a9a9e077c41cd15ccae5.gif",
+    "static/media/magprint_details-07_IsaacHuang.gif": "/portfolio/static/media/magprint_details-07_IsaacHuang.d09ec20c06449bc6e97c.gif",
     "static/media/duplo_details-11_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-11_IsaacHuang.c499e72d5a530f771bf6.jpg",
     "static/media/searching-ball_details-07_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-07_IsaacHuang.104da5c442767cc30c5c.jpg",
     "static/media/searching-ball_details-01_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-01_IsaacHuang.25a441ad95a38042f037.jpg",
@@ -12,7 +14,7 @@
     "static/media/duplo_details-08_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-08_IsaacHuang.ce409b1f5b670e663873.jpg",
     "static/media/magprint_cover-02_IsaacHuang.jpg": "/portfolio/static/media/magprint_cover-02_IsaacHuang.7703565e8f19007cde4b.jpg",
     "static/media/magprint_cover-01_IsaacHuang.jpg": "/portfolio/static/media/magprint_cover-01_IsaacHuang.7670ffb7cdcf4bb61669.jpg",
-    "static/media/magprint_details-07_IsaacHuang.jpg": "/portfolio/static/media/magprint_details-07_IsaacHuang.6adba76b45378c203da8.jpg",
+    "static/media/magprint_details-08_IsaacHuang.jpg": "/portfolio/static/media/magprint_details-08_IsaacHuang.6adba76b45378c203da8.jpg",
     "static/media/duplo_details-06_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-06_IsaacHuang.8ded50709e248b180bba.jpg",
     "static/media/duplo_details-10_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-10_IsaacHuang.521d0ad0295c7cc20c49.jpg",
     "static/media/searching-ball_cover-02_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_cover-02_IsaacHuang.defe15b5ea7c922a545b.jpg",
@@ -38,9 +40,9 @@
     "static/media/duplo_details-04_IsaacHuang.jpg": "/portfolio/static/media/duplo_details-04_IsaacHuang.58514f2ffb66a9219575.jpg",
     "static/media/candle-chair_cover-01_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_cover-01_IsaacHuang.9ffd929786e3585a3354.jpg",
     "static/media/magprint_details-02_IsaacHuang.jpg": "/portfolio/static/media/magprint_details-02_IsaacHuang.1f3c5d006464bb075eb4.jpg",
-    "static/media/candle-chair_details-07_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-07_IsaacHuang.90394fd052e8b7a6b33a.jpg",
+    "static/media/candle-chair_details-08_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-08_IsaacHuang.90394fd052e8b7a6b33a.jpg",
     "static/media/searching-ball_details-04_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-04_IsaacHuang.ea2c8463d1a3ffd85107.jpg",
-    "static/media/candle-chair_details-08_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-08_IsaacHuang.e695cb6d41a0d70286d7.jpg",
+    "static/media/candle-chair_details-09_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-09_IsaacHuang.e695cb6d41a0d70286d7.jpg",
     "static/media/magprint_details-06_IsaacHuang.jpg": "/portfolio/static/media/magprint_details-06_IsaacHuang.2cad0de6e9026be2ef1b.jpg",
     "static/media/luggageplus_details-08_IsaacHuang.jpg": "/portfolio/static/media/luggageplus_details-08_IsaacHuang.ba77a45b7d8bfef56c2e.jpg",
     "static/media/searching-ball_details-02_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-02_IsaacHuang.dc07a362018777b11fbe.jpg",
@@ -49,7 +51,7 @@
     "static/media/luggageplus_details-11_IsaacHuang.jpg": "/portfolio/static/media/luggageplus_details-11_IsaacHuang.d0d41640fbd3f8f1bb67.jpg",
     "static/media/searching-ball_details-05_IsaacHuang.jpg": "/portfolio/static/media/searching-ball_details-05_IsaacHuang.716793693d6b211e8c6b.jpg",
     "static/media/luggageplus_details-05_IsaacHuang.jpg": "/portfolio/static/media/luggageplus_details-05_IsaacHuang.345c529dd184085c0cd5.jpg",
-    "static/media/candle-chair_details-06_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-06_IsaacHuang.b67ccab397537f6905c2.jpg",
+    "static/media/candle-chair_details-07_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_details-07_IsaacHuang.b67ccab397537f6905c2.jpg",
     "static/media/duplo_cover-02_IsaacHuang.jpg": "/portfolio/static/media/duplo_cover-02_IsaacHuang.4addc5bf146ddbd28887.jpg",
     "static/media/duplo_cover-01_IsaacHuang.jpg": "/portfolio/static/media/duplo_cover-01_IsaacHuang.57de8e5932560a3c1ba4.jpg",
     "static/media/luggageplus_details-03_IsaacHuang.jpg": "/portfolio/static/media/luggageplus_details-03_IsaacHuang.d527ac36cf9d9a6e69a6.jpg",
@@ -70,12 +72,12 @@
     "static/media/candle-chair_thumbnail-01_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_thumbnail-01_IsaacHuang.541bc1b0ba9ceaba4017.jpg",
     "static/media/candle-chair_thumbnail-02_IsaacHuang.jpg": "/portfolio/static/media/candle-chair_thumbnail-02_IsaacHuang.cb00548b799689c0013d.jpg",
     "index.html": "/portfolio/index.html",
-    "main.764b54e8.css.map": "/portfolio/static/css/main.764b54e8.css.map",
-    "main.954f15e8.js.map": "/portfolio/static/js/main.954f15e8.js.map",
+    "main.761af0f6.css.map": "/portfolio/static/css/main.761af0f6.css.map",
+    "main.dd424401.js.map": "/portfolio/static/js/main.dd424401.js.map",
     "976.e7e26451.chunk.js.map": "/portfolio/static/js/976.e7e26451.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.764b54e8.css",
-    "static/js/main.954f15e8.js"
+    "static/css/main.761af0f6.css",
+    "static/js/main.dd424401.js"
   ]
 }

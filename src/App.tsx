@@ -4,9 +4,9 @@ import router from './routes/configure'
 
 // TODO:
 // (DONE) 1. Set route to get project -> /work/luggageplus
-// 2. GIF
+// (DONE) 2. GIF
 // 3. Under construction
-// 4. Propotion
+// (DONE) 4. Propotion
 // 5. Favicon
 // (DONE) 6. Error page
 // 7. Linter

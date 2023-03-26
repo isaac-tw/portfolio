@@ -1,26 +1,26 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import DetailBlock from "./DetailBlock";
-import projects from '../data/projects.json'
 import { useParams } from 'react-router-dom';
 import { useScrollDirection } from "react-use-scroll-direction";
-import { getMaxHeight } from "../utils/utils";
+import DetailSection from "./DetailSection";
+import projects from '../data/projects.js'
 
 interface Project {
+  details: object,
+  dimensions: string,
+  duration: string,
   id: string,
   name: string,
   subtitle: string,
   year: number,
-  duration: string,
-  imageRatio: string,
-  details: object,
 }
 
 interface Projects {
-  luggageplus: Project,
-  duplo: Project,
   "candle-chair": Project,
+  duplo: Project,
+  luggageplus: Project,
   magprint: Project,
+  "searching-ball": Project,
 }
 
 export async function loader({ params }: any) {
@@ -38,11 +38,7 @@ export async function loader({ params }: any) {
 export default function InfoPage() {
   const { projectId } = useParams();
   const project =  projects[projectId as keyof Projects];
-
-  const lazyLoadHeight = getMaxHeight(
-    document.body.clientWidth,
-    project.imageRatio,
-  );
+  const clientWidth = document.body.clientWidth;
   const { isScrollingDown } = useScrollDirection();
 
   return (
@@ -72,15 +68,19 @@ export default function InfoPage() {
         </div>
       </div>
       <div className="info-page__content">
-        {Object.entries(project.details).map(([key, value]) => (
-          <DetailBlock
-            imageName={key}
+        {project.details.map((detail, index) => {
+          console.log('index', project.id)
+          console.log('index', index)
+          console.log('detail', detail)
+          return (
+          <DetailSection
+            clientWidth={clientWidth}
+            detail={detail}
+            id={project.id}
             isScrollingDown={isScrollingDown}
-            key={key}
-            lazyLoadHeight={lazyLoadHeight}
-            url={require(`../assets/${project.id}/details/${key}.${value}`)}
+            key={index}
           />
-        ))}
+        )})}
       </div>
     </div>
   );

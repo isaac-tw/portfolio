@@ -1,0 +1,100 @@
+{
+  "id": "luggageplus",
+  "name": "Luggage+",
+  "subtitle": "A Smart Travel App",
+  "year": 2019,
+  "duration": "3 weeks",
+  "details": [
+    [
+      {
+        "file": "details-01",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-02",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-03",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-04",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-05",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-06",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-07",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-08",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-09",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-10",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-11",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "Demo - Luggage+",
+        "format": "vimeo",
+        "src": "https://player.vimeo.com/video/448179470?h=63083b4129&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      }
+    ],
+    [
+      {
+        "file": "details-12",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ]
+  ]
+}

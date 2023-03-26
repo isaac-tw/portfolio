@@ -1,0 +1,86 @@
+{
+  "id": "duplo",
+  "name": "Usability Problems of LEGO Duplo",
+  "subtitle": "When LEGO Meets AR",
+  "year": 2017,
+  "duration": "",
+  "details": [
+    [
+      {
+        "file": "details-01",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-02",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-03",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-04",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-05",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-06",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-07",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-08",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-09",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-10",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-11",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ]
+  ]
+}

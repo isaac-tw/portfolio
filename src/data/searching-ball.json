@@ -1,0 +1,58 @@
+{
+  "id": "searching-ball",
+  "name": "Searching Ball",
+  "subtitle": "When Smartphone Meets Robot Vacuum",
+  "year": 2016,
+  "duration": "",
+  "details": [
+    [
+      {
+        "file": "details-01",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-02",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-03",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-04",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-05",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-06",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ],
+    [
+      {
+        "file": "details-07",
+        "format": "jpg",
+        "dimensions": "A4"
+      }
+    ]
+  ]
+}

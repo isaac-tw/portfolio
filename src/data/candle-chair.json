@@ -1,0 +1,72 @@
+{
+  "id": "candle-chair",
+  "name": "Candle Chair",
+  "subtitle": "An alternative for Yield Estimation",
+  "year": 2019,
+  "duration": "4 weeks",
+  "details": [
+    [
+      {
+        "file": "details-01",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-02",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-03",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-04",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-05",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-06",
+        "format": "gif",
+        "dimensions": "679x595"
+      }
+    ],
+    [
+      {
+        "file": "details-07",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-08",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-09",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ]
+  ]
+}

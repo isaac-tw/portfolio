@@ -1,0 +1,65 @@
+{
+  "id": "magprint",
+  "name": "MagPrint",
+  "subtitle": "Magnetic Printer Gizmo",
+  "year": 2018,
+  "duration": "3 weeks",
+  "details": [
+    [
+      {
+        "file": "details-01",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-02",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-03",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-04",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-05",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-06",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ],
+    [
+      {
+        "file": "details-07",
+        "format": "gif",
+        "dimensions": "640x360"
+      }
+    ],
+    [
+      {
+        "file": "details-08",
+        "format": "jpg",
+        "dimensions": "A3"
+      }
+    ]
+  ]
+}

@@ -28,7 +28,7 @@ const routes = createRoutesFromElements(
 
 const router = createBrowserRouter(
   routes,
-  { basename: "/portfolio" },
+  { basename: "/" },
 );
 
 export default router;

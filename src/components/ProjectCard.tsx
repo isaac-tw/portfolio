@@ -6,36 +6,34 @@ export default function ProjectCard({
   id,
   name,
   subtitle,
-  year,
-  duration,
 }: {
   id: string,
   name: string,
   subtitle: string,
-  year: number,
-  duration: string,
 }) {
   return (
     <div className="project-card">
       <div className="project-card__image-section">
         <Link to={`/work/${id}`}>
-          <LazyLoad>
-            <img
-              className="hoverable-img--front"
-              src={require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`)}
-              alt={`${name}`}
-              width="1920px"
-              height="1080px"
-            />
-          </LazyLoad>
-          <LazyLoad>
-            <img
-              className="hoverable-img"
-              src={require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`)}
-              alt={`${name}`}
-              width="1920px"
-              height="1080px"
-            />
+          {/* Although this might be a rare case, */}
+          {/* LazyLoad can make <img /> with the same src into different assets */}
+          <LazyLoad once>
+            <div>
+              <img
+                className="hoverable-img--front"
+                src={require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`)}
+                alt={`${name}`}
+                width="1920px"
+                height="1080px"
+              />
+              <img
+                className="hoverable-img"
+                src={require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`)}
+                alt={`${name}`}
+                width="1920px"
+                height="1080px"
+              />
+            </div>
           </LazyLoad>
         </Link>
       </div>

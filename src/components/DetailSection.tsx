@@ -108,7 +108,7 @@ export default function DetailSection({
                     laptop={12 / detail.length}
                     key={item.file}
                   >
-                    <LazyLoad height={height}>
+                    <LazyLoad height={height} once resize>
                       {renderDetail(id, item, width, height)}
                     </LazyLoad>
                   </Grid>

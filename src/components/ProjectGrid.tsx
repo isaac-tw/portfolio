@@ -1,7 +1,9 @@
+import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import ProjectCard from './ProjectCard'
-import projects from '../data/projects_test.json'
+// import projects from '../data/projects_test.json'
+import projects from '../data/projects.js'
 
 export default function ProjectGrid() {
   return (
@@ -29,8 +31,6 @@ export default function ProjectGrid() {
                 id={value.id}
                 name={value.name}
                 subtitle={value.subtitle}
-                year={value.year}
-                duration={value.duration}
               />
             </Grid>
           ))

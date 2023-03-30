@@ -7,11 +7,13 @@ import router from './routes/configure'
 // (DONE) 2. GIF
 // 3. Under construction
 // (DONE) 4. Propotion
-// 5. Favicon
+// (DONE) 5. Favicon
 // (DONE) 6. Error page
 // 7. Linter
 // 8. Remove all default stuffs
 // 9. Update all ts in codebase
+// 10. mailto
+// 11. reCAPTCHA
 
 function App() {
   return (

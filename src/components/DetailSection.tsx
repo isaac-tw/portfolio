@@ -4,7 +4,7 @@ import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Unstable_Grid2";
 import LazyLoad from "react-lazyload";
 import { useInViewport } from "react-in-viewport";
-import { transitionEasing } from "../utils/constants";
+import { fadeTransitionProps } from "../utils/constants";
 import { getWidthAndHeight } from "../utils/utils";
 
 interface Item {
@@ -92,8 +92,8 @@ export default function DetailSection({
   return (
     <div className="detail-block">
       <Fade
+        {...fadeTransitionProps}
         in={inViewport || !isScrollingDown}
-        easing={transitionEasing}
         ref={containerRef}
       >
         <div>

@@ -10,19 +10,23 @@ export const screenTablet = 600;
 export const screenLaptop = 1024;
 export const screenDesktop = 1536;
 
-export const transitionEasing = {
-    enter: "1s ease-in-out,opacity .8s ease-in-out",
+export const fadeTransitionProps = {
+  easing: {
+    enter: "ease-in-out",
     exit: "unset",
+  },
+  timeout: 800,
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    mainBlue,
-    darkGrey,
-    lightGrey,
-    screenMobileOld,
-    screenMobile,
-    screenTablet,
-    screenLaptop,
-    screenDesktop,
+  mainBlue,
+  darkGrey,
+  lightGrey,
+  screenMobileOld,
+  screenMobile,
+  screenTablet,
+  screenLaptop,
+  screenDesktop,
+  fadeTransitionProps,
 };

@@ -47,28 +47,36 @@ export default function InfoPage() {
   const { isScrollingDown } = useScrollDirection();
 
   const infoPageCover = useMemo(
-    () => (
-      <div className="info-page__cover">
-        <img
-          className="hoverable-img--front"
-          src={require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.jpg`)}
-          alt={`${name}`}
-          width="1920px"
-          height="1080px"
-        />
-        <img
-          className="hoverable-img"
-          src={require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.jpg`)}
-          alt={`${name}`}
-          width="1920px"
-          height="1080px"
-        />
-        <div className="info-page__year-duration rfs-main">
-          {year}
-          {duration ? <span> / {duration}</span> : null}
+    () => {
+      const frontImgSrc = require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.jpg`);
+      let backImgSrc;
+      try {
+        backImgSrc = require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.jpg`);
+      } catch(e) {}
+
+      return (
+        <div className="info-page__cover">
+          <img
+            className="hoverable-img--front"
+            src={frontImgSrc}
+            alt={`${name}`}
+            width="1920px"
+            height="1080px"
+          />
+          <img
+            className="hoverable-img"
+            src={backImgSrc || frontImgSrc}
+            alt={`${name}`}
+            width="1920px"
+            height="1080px"
+          />
+          <div className="info-page__year-duration rfs-main">
+            {year}
+            {duration ? <span> / {duration}</span> : null}
+          </div>
         </div>
-      </div>
-    ),
+      );
+    },
     [id, name, year, duration]
   );
 

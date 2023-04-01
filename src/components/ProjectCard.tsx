@@ -11,6 +11,12 @@ export default function ProjectCard({
   name: string,
   subtitle: string,
 }) {
+  const frontImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`);
+  let backImgSrc;
+  try {
+    backImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`);
+  } catch(e) {}
+
   return (
     <div className="project-card">
       <div className="project-card__image-section">
@@ -21,14 +27,14 @@ export default function ProjectCard({
             <div>
               <img
                 className="hoverable-img--front"
-                src={require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`)}
+                src={frontImgSrc}
                 alt={`${name}`}
                 width="1920px"
                 height="1080px"
               />
               <img
                 className="hoverable-img"
-                src={require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`)}
+                src={backImgSrc || frontImgSrc}
                 alt={`${name}`}
                 width="1920px"
                 height="1080px"

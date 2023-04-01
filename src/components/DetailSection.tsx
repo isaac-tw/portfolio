@@ -15,7 +15,12 @@ interface Item {
   src?: string;
 }
 
-const renderDetail = (id: string, item: Item, width: number, height: number) => {
+const renderDetail = (
+  id: string,
+  item: Item,
+  width: number,
+  height: number,
+) => {
   if (!item.file) return null;
   switch (item.format) {
     case "quote":
@@ -113,8 +118,9 @@ export default function DetailSection({
           </Grid>
         </Box>
       </div>
-    )
-  , [clientWidth, detail, id]);
+    ),
+    [clientWidth, detail, id]
+  );
 
   return (
     <div className="detail-block">

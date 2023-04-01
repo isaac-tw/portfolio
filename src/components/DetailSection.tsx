@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -89,6 +89,32 @@ export default function DetailSection({
   const containerRef = useRef<HTMLHeadingElement>(null);
   const { inViewport } = useInViewport(containerRef);
 
+  const fadeContent = useMemo(
+    () => (
+      <div>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container>
+            {detail.map((item) => {
+              const { width, height } = getWidthAndHeight(clientWidth, item.dimensions);
+              return (
+                <Grid
+                  mobileOld={12}
+                  mobile={12}
+                  laptop={12 / detail.length}
+                  key={item.file}
+                >
+                  <LazyLoad height={height} once resize>
+                    {renderDetail(id, item, width, height)}
+                  </LazyLoad>
+                </Grid>
+              );
+            })}
+          </Grid>
+        </Box>
+      </div>
+    )
+  , [clientWidth, detail, id]);
+
   return (
     <div className="detail-block">
       <Fade
@@ -96,27 +122,7 @@ export default function DetailSection({
         in={inViewport || !isScrollingDown}
         ref={containerRef}
       >
-        <div>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container>
-              {detail.map((item) => {
-                const { width, height } = getWidthAndHeight(clientWidth, item.dimensions);
-                return (
-                  <Grid
-                    mobileOld={12}
-                    mobile={12}
-                    laptop={12 / detail.length}
-                    key={item.file}
-                  >
-                    <LazyLoad height={height} once resize>
-                      {renderDetail(id, item, width, height)}
-                    </LazyLoad>
-                  </Grid>
-                );
-              })}
-            </Grid>
-          </Box>
-        </div>
+        {fadeContent}
       </Fade>
     </div>
   );

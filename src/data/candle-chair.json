@@ -49,6 +49,9 @@
     ],
     [
       {
+        "format": "placeholder"
+      },
+      {
         "dimensions": "679x595",
         "file": "details-06",
         "format": "gif"

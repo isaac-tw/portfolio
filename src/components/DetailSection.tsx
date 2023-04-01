@@ -8,7 +8,7 @@ import { fadeTransitionProps } from "../utils/constants";
 import { getWidthAndHeight } from "../utils/utils";
 
 interface Item {
-  file: string;
+  file?: string;
   format: string;
   dimensions?: string;
   keyWord?: string;
@@ -16,6 +16,7 @@ interface Item {
 }
 
 const renderDetail = (id: string, item: Item, width: number, height: number) => {
+  if (!item.file) return null;
   switch (item.format) {
     case "quote":
       return (
@@ -94,14 +95,14 @@ export default function DetailSection({
       <div>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container>
-            {detail.map((item) => {
+            {detail.map((item, index) => {
               const { width, height } = getWidthAndHeight(clientWidth, item.dimensions);
               return (
                 <Grid
                   mobileOld={12}
                   mobile={12}
                   laptop={12 / detail.length}
-                  key={item.file}
+                  key={index}
                 >
                   <LazyLoad height={height} once resize>
                     {renderDetail(id, item, width, height)}

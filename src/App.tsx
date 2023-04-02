@@ -5,7 +5,7 @@ import router from './routes/configure'
 // TODO:
 // (DONE) 1. Set route to get project -> /work/luggageplus
 // (DONE) 2. GIF
-// 3. Under construction
+// (DONE) 3. Under construction
 // (DONE) 4. Propotion
 // (DONE) 5. Favicon
 // (DONE) 6. Error page

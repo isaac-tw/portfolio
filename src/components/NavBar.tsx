@@ -19,7 +19,8 @@ export default function NavBar() {
                     Misc
                 </a><div className='divider'>/</div>
                 <NavLink to="about">About</NavLink><div className='divider'>/</div>
-                <span onClick={() => console.log('Contact')}>Contact</span>
+                {/* <span onClick={() => console.log('Contact')}>Contact</span> */}
+                <a href="mailto:isaac.huang.tw@gmail.com">Contact</a>
             </nav>
         </div>
     );

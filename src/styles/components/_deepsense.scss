@@ -1,0 +1,31 @@
+.deepsense-img-collage {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 !important;
+}
+
+.deepsense-img-collage__left {
+    display: flex;
+    justify-content: center;
+
+    >img {
+        margin-bottom: $detail-block-margin-bottom;
+    }
+
+    @media only screen and (min-width: $screen-laptop) {
+        >img {
+            margin-bottom: unset;
+        }
+    }
+}
+
+.deepsense-img-collage__right {
+    display: flex;
+    justify-content: center;
+
+    >img {
+        width: 100%;
+        height: auto;
+    }
+}

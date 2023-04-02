@@ -35,18 +35,17 @@ const renderDetail = (
         if (keywordIndex === -1) return null;
         return (
           <div className="detail-block__link-quote rfs-quote" style={{ height }}>
-            <span>
+            <div>
               {item.file.substring(0, keywordIndex)}
-            </span>
-            &nbsp;
-            <a
-              className="detail-block__link-quote--link"
-              href={item.src}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {item.keyWord}
-            </a>
+              <a
+                className="detail-block__link-quote--link"
+                href={item.src}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {item.keyWord}
+              </a>
+          </div>
           </div>
         );
       case "jpg":

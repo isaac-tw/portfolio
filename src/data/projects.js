@@ -9,10 +9,10 @@ import searchingBall from './searching-ball.json'
 const projects = {
     "candle-chair": candleChair,
     duplo,
-    // deepsense: deepsense,
+    deepsense: deepsense,
     luggageplus,
     magprint,
-    // "o-assist": oAssist,
+    "o-assist": oAssist,
     "searching-ball": searchingBall,
 };
 

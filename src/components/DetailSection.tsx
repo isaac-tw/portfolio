@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from "react";
+import React, { ElementType, useMemo, useRef } from "react";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -8,6 +8,7 @@ import { fadeTransitionProps } from "../utils/constants";
 import { getWidthAndHeight } from "../utils/utils";
 
 interface Item {
+  component?: ElementType;
   file?: string;
   format: string;
   dimensions?: string;
@@ -21,64 +22,66 @@ const renderDetail = (
   width: number,
   height: number,
 ) => {
-  if (!item.file) return null;
-  switch (item.format) {
-    case "quote":
-      return (
-        <div className="detail-block__quote rfs-quote" style={{ height }}>
-          {item.file}
-        </div>
-      );
-    case "linkQuote":
-      const keywordIndex = item.file.indexOf(item.keyWord || "");
-      if (keywordIndex === -1) return null;
-      return (
-        <div className="detail-block__link-quote rfs-quote" style={{ height }}>
-          <span>
-            {item.file.substring(0, keywordIndex)}
-          </span>
-          &nbsp;
-          <a
-            className="detail-block__link-quote--link"
-            href={item.src}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {item.keyWord}
-          </a>
-        </div>
-      );
-    case "jpg":
-    case "png":
-    case "gif":
-      return (
-        <img
-          className="detail-block__img"
-          src={require(`../assets/${id}/details/${id}_${item.file}_IsaacHuang.${item.format}`)}
-          alt={item.file}
-          width={width}
-          height={height}
-        />
-      );
-    case "vimeo":
-      return (
-        <>
-          <div className="detail-block__vimeo">
-            <iframe
-              className="detail-block__vimeo--iframe"
-              src={item.src}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title={item.file}
-            ></iframe>
+    if (!item.file) return null;
+    switch (item.format) {
+      case "quote":
+        return (
+          <div className="detail-block__quote rfs-quote" style={{ height }}>
+            {item.file}
           </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-        </>
-      );
-    default:
-      return null;
-  }
+        );
+      case "linkQuote":
+        const keywordIndex = item.file.indexOf(item.keyWord || "");
+        if (keywordIndex === -1) return null;
+        return (
+          <div className="detail-block__link-quote rfs-quote" style={{ height }}>
+            <span>
+              {item.file.substring(0, keywordIndex)}
+            </span>
+            &nbsp;
+            <a
+              className="detail-block__link-quote--link"
+              href={item.src}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {item.keyWord}
+            </a>
+          </div>
+        );
+      case "jpg":
+      case "png":
+      case "gif":
+        return (
+          <img
+            className="detail-block__img"
+            src={require(`../assets/${id}/details/${id}_${item.file}_IsaacHuang.${item.format}`)}
+            alt={item.file}
+            width={width}
+            height={height}
+          />
+        );
+      case "vimeo":
+        return (
+          <>
+            <div className="detail-block__vimeo">
+              <iframe
+                className="detail-block__vimeo--iframe"
+                src={item.src}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={item.file}
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </>
+        );
+      case "component":
+        return item.component ? React.createElement(item.component) : null;
+      default:
+        return null;
+    }
 };
 
 export default function DetailSection({
@@ -99,7 +102,21 @@ export default function DetailSection({
     () => (
       <div>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container>
+          <Grid
+            container
+            rowSpacing={{
+              mobileOld: 2,
+              mobile: 2,
+              tablet: 2,
+              laptop: 0,
+            }}
+            columnSpacing={{
+              mobileOld: 0,
+              mobile: 0,
+              tablet: 0,
+              laptop: 2,
+            }}
+          >
             {detail.map((item, index) => {
               const { width, height } = getWidthAndHeight(clientWidth, item.dimensions);
               return (

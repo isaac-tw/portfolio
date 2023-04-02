@@ -1,5 +1,11 @@
+$detail-block-margin-bottom: 3vw;
+
 .detail-block {
-  margin-bottom: 2vw;
+  margin-bottom: $detail-block-margin-bottom;
+
+  @media only screen and (min-width: $screen-laptop) {
+    margin-bottom: 5vw;
+  }
 }
 
 .detail-block__quote {

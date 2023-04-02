@@ -1,0 +1,39 @@
+.intro {
+    color: $dark-grey;
+    margin-top: 6vw;
+    margin-bottom: 7vw;
+}
+
+.intro__title {
+    font-weight: bolder;
+    line-height: 1.6;
+    text-align: left;
+
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+
+    @media only screen and (min-width: $screen-mobileOld) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (min-width: $screen-mobile) {
+        font-size: 1.6rem;
+    }
+
+    @media only screen and (min-width: $screen-tablet) {
+        font-size: 2.1rem;
+        margin-bottom: 3rem;
+    }
+
+    @media only screen and (min-width: $screen-laptop) {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.intro__description {
+    line-height: 1.6;
+    text-align: left;
+
+    white-space: pre-line;
+}

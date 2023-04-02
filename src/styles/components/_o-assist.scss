@@ -1,0 +1,41 @@
+.oassist-img-collage {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 !important;
+}
+
+.oassist-img-collage__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+
+    >img {
+        margin-bottom: $detail-block-margin-bottom;
+    }
+
+    @media only screen and (min-width: $screen-laptop) {
+        >img {
+            margin-bottom: unset;
+        }
+    }
+}
+
+.oassist-img-collage__right {
+    display: flex;
+    justify-content: center;
+
+    >img {
+        width: 50%;
+        height: auto;
+    }
+
+    @media only screen and (min-width: $screen-laptop) {
+        >img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

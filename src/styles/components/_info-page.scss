@@ -18,9 +18,13 @@
   position: sticky;
 }
 
-.info-page__year-duration {
+.info-page__year-duration-note {
   color: $dark-grey;
   text-align: right;
   text-transform: capitalize;
   padding: 1rem;
+
+  &--note {
+    margin-top: 1.5vw;
+  }
 }

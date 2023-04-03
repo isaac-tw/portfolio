@@ -10,6 +10,7 @@ interface Project {
   duration: string;
   id: string;
   name: string;
+  note?: string;
   subtitle: string;
   year: number;
 }
@@ -17,8 +18,11 @@ interface Project {
 interface Projects {
   "candle-chair": Project;
   duplo: Project;
+  // TODO: Fix ts errors
+  // deepsense: Project;
   luggageplus: Project;
   magprint: Project;
+  "o-assist": Project;
   "searching-ball": Project;
 }
 
@@ -41,6 +45,8 @@ export default function InfoPage() {
     name,
     year,
     duration,
+    // TODO: Make it optional -> fix ts error
+    note,
     details,
   } = projects[projectId as keyof Projects];
   const clientWidth = document.body.clientWidth;
@@ -70,14 +76,15 @@ export default function InfoPage() {
             width="1920px"
             height="1080px"
           />
-          <div className="info-page__year-duration rfs-main">
+          <div className="info-page__year-duration-note rfs-main">
             {year}
             {duration ? <span> / {duration}</span> : null}
+            {note ? <div className="info-page__year-duration-note--note rfs-cap">{note}</div> : null}
           </div>
         </div>
       );
     },
-    [id, name, year, duration]
+    [id, name, note, year, duration]
   );
 
   return (

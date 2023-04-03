@@ -54,6 +54,7 @@ const deepSense = {
   subtitle: "An alternative for Yield Estimation",
   year: 2020,
   duration: "12 weeks",
+  note: "",
   details,
 };
 

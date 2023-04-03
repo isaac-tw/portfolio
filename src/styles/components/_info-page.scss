@@ -1,13 +1,16 @@
 .info-page__cover {
   position: sticky;
   // top = height + margin-bottom + padding-bottom of the nav
-  top: 42vw;
+  // top: 42vw;
+  top: 0;
 
   @media only screen and (min-width: $screen-mobile) {
-      top: 23vw;
+      // top: 23vw;
+      top: 0;
   }
   @media only screen and (min-width: $screen-tablet) {
-      top: 13vw;
+      // top: 13vw;
+      top: 0;
   }
 }
 

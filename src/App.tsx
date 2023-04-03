@@ -14,6 +14,7 @@ import router from './routes/configure'
 // 9. Update all ts in codebase
 // 10. mailto
 // 11. reCAPTCHA
+// 12. Lazyload offset
 
 function App() {
   return (

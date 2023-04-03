@@ -1,6 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import { Link } from "react-router-dom";
+import Tooltip from '@mui/material/Tooltip';
 
 export default function ProjectCard({
   id,
@@ -43,8 +44,16 @@ export default function ProjectCard({
           </LazyLoad>
         </Link>
       </div>
-      <div className="project-card__title rfs-main">{name}</div>
-      <div className="project-card__subtitle rfs-sub">{subtitle}</div>
+      <Tooltip title={name}>
+        <div className="project-card__title rfs-main">
+          {name}
+          </div>
+      </Tooltip>
+      <Tooltip title={subtitle}>
+        <div className="project-card__subtitle rfs-sub">
+          {subtitle}
+        </div>
+      </Tooltip>
     </div>
   );
 }

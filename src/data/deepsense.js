@@ -9,7 +9,9 @@ const details = [
       format: "component",
       component: DeepSenseIntro,
     },
-    {},
+    {
+      "format": "placeholder"
+    },
   ],
   [
     {
@@ -53,7 +55,7 @@ const deepSense = {
   name: "DeepSense",
   subtitle: "An alternative for Yield Estimation",
   year: 2020,
-  duration: "12 weeks",
+  duration: "12 Weeks",
   note: "",
   details,
 };

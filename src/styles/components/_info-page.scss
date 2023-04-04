@@ -1,5 +1,6 @@
 .info-page__cover {
   position: sticky;
+  // TODO: Change top to 0 only when the window in specific width and height
   // top = height + margin-bottom + padding-bottom of the nav
   // top: 42vw;
   top: 0;

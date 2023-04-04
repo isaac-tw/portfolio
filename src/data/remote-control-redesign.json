@@ -1,18 +1,11 @@
 {
-  "id": "candle-chair",
-  "name": "Candle Chair",
-  "subtitle": "The Chair of Time",
-  "year": 2019,
-  "duration": "4 Weeks",
+  "id": "remote-control-redesign",
+  "name": "Remote Control Redesign",
+  "subtitle": "UX Exercise",
+  "year": 2021,
+  "duration": "3 Days",
   "note": "",
   "details": [
-    [
-      {
-        "dimensions": "2x1",
-        "file": "The Chair of Time",
-        "format": "quote"
-      }
-    ],
     [
       {
         "dimensions": "A3",
@@ -50,32 +43,15 @@
     ],
     [
       {
-        "format": "placeholder"
-      },
-      {
-        "dimensions": "679x595",
+        "dimensions": "A3",
         "file": "details-06",
-        "format": "gif"
+        "format": "jpg"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-07",
-        "format": "jpg"
-      }
-    ],
-    [
-      {
-        "dimensions": "A3",
-        "file": "details-08",
-        "format": "jpg"
-      }
-    ],
-    [
-      {
-        "dimensions": "A3",
-        "file": "details-09",
         "format": "jpg"
       }
     ]

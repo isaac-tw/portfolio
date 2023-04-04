@@ -4,6 +4,7 @@ import deepsense from './deepsense'
 import luggageplus from './luggageplus.json'
 import magprint from './magprint.json'
 import oAssist from './o-assist'
+import remoteControlRedesign from './remote-control-redesign.json'
 import searchingBall from './searching-ball.json'
 
 const projects = {
@@ -13,6 +14,7 @@ const projects = {
     luggageplus,
     magprint,
     "o-assist": oAssist,
+    "remote-control-redesign": remoteControlRedesign,
     "searching-ball": searchingBall,
 };
 

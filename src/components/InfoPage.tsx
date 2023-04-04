@@ -18,11 +18,11 @@ interface Project {
 interface Projects {
   "candle-chair": Project;
   duplo: Project;
-  // TODO: Fix ts errors
-  // deepsense: Project;
+  deepsense: Project;
   luggageplus: Project;
   magprint: Project;
   "o-assist": Project;
+  "remote-control-redesign": Project;
   "searching-ball": Project;
 }
 

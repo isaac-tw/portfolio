@@ -71,7 +71,7 @@ const oAssist = {
   name: "o-assist",
   subtitle: "Your Olfactory Assistant",
   year: 2020,
-  duration: "16 weeks",
+  duration: "16 Weeks",
   note: "(This project is run in the pandemic lockdown period)",
   details,
 };

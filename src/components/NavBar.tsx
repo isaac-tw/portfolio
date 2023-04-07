@@ -1,12 +1,13 @@
+import React from "react";
 import { Link, NavLink } from 'react-router-dom'
 
 export default function NavBar() {
     const renderIcon = () => (
-        <Link to="/" className='icon'>
-            <div className='first-name'>Wei-Chun&nbsp;</div>
-            <div className='last-name'>Huang</div>
-        </Link>
-    );
+            <Link to="/" className='icon'>
+                <div className='first-name'>Wei-Chun&nbsp;</div>
+                <div className='last-name'>Huang</div>
+            </Link>
+        );
     const renderTabs = () => (
         <div className='tabs'>
             <nav className="elements">

@@ -1,17 +1,13 @@
 .info-page__cover {
   position: sticky;
-  // TODO: Change top to 0 only when the window in specific width and height
   // top = height + margin-bottom + padding-bottom of the nav
-  // top: 42vw;
-  top: 0;
+  top: 42vw;
 
   @media only screen and (min-width: $screen-mobile) {
-      // top: 23vw;
-      top: 0;
+    top: 23vw;
   }
   @media only screen and (min-width: $screen-tablet) {
-      // top: 13vw;
-      top: 0;
+    top: 13vw;
   }
 }
 
@@ -22,7 +18,7 @@
   position: sticky;
 }
 
-.info-page__year-duration-note {
+.info-page__caption {
   color: $dark-grey;
   text-align: right;
   text-transform: capitalize;

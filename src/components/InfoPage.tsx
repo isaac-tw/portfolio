@@ -1,8 +1,9 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useScrollDirection } from "react-use-scroll-direction";
 import DetailSection from "./DetailSection";
 import projects from "../data/projects.js";
+import { getWidthAndHeight } from "../utils/utils";
 
 interface Project {
   details: object;
@@ -49,8 +50,21 @@ export default function InfoPage() {
     note,
     details,
   } = projects[projectId as keyof Projects];
+  const infoPageRef = useRef<HTMLHeadingElement>(null);
+  const infoPageCapRef = useRef<HTMLHeadingElement>(null);
   const clientWidth = document.body.clientWidth;
+  const { height: coverHeight } = getWidthAndHeight(clientWidth, "16x9");
   const { isScrollingDown } = useScrollDirection();
+
+  const innerHeight =  window.innerHeight;
+  const infoPageOffsetTop =  infoPageRef.current?.offsetTop || 0;
+  const infoPageCapOffsetHeight =  infoPageCapRef.current?.offsetHeight || 0;
+
+  const coverStyle = useMemo(() => (innerHeight < infoPageOffsetTop + coverHeight + infoPageCapOffsetHeight) ? ({
+    // 0.5 = innerHeight - 0.5 * innerHeight: make sure the caption shows till half of the innerHeight
+    top: 0.5 * innerHeight - (coverHeight + infoPageCapOffsetHeight),
+  }) : {}
+  , [innerHeight, infoPageOffsetTop, coverHeight, infoPageCapOffsetHeight]);
 
   const infoPageCover = useMemo(
     () => {
@@ -61,7 +75,10 @@ export default function InfoPage() {
       } catch(e) {}
 
       return (
-        <div className="info-page__cover">
+        <div
+          className="info-page__cover"
+          style={coverStyle}
+        >
           <img
             className="hoverable-img--front"
             src={frontImgSrc}
@@ -76,19 +93,25 @@ export default function InfoPage() {
             width="1920px"
             height="1080px"
           />
-          <div className="info-page__year-duration-note rfs-main">
+          <div
+            className="info-page__caption rfs-main"
+            ref={infoPageCapRef}
+          >
             {year}
             {duration ? <span> / {duration}</span> : null}
-            {note ? <div className="info-page__year-duration-note--note rfs-cap">{note}</div> : null}
+            {note ? <div className="info-page__caption--note rfs-cap">{note}</div> : null}
           </div>
         </div>
       );
     },
-    [id, name, note, year, duration]
+    [id, coverStyle, name, note, year, duration]
   );
 
   return (
-    <div className="info-page">
+    <div
+      className="info-page"
+      ref={infoPageRef}
+    >
       {infoPageCover}
       <div className="info-page__content">
         {details.map((detail, index) => (

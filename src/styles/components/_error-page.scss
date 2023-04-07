@@ -7,10 +7,10 @@
     margin-top: 10vw;
     display: flex;
 
-    @media only screen and (min-width: $screen-mobile) {
+    @include for-mobile-up {
         margin-top: 6vw;
     }
-    @media only screen and (min-width: $screen-tablet) {
+    @include for-tablet-up {
         margin-top: 4vw;
     }
 }
@@ -24,10 +24,10 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media only screen and (min-width: $screen-mobile) {
+    @include for-mobile-up {
         font-size: 4.5rem;
     }
-    @media only screen and (min-width: $screen-tablet) {
+    @include for-tablet-up {
         font-size: 6rem;
     }
 }
@@ -46,12 +46,12 @@
     height: 120px;
     margin-left: 20px;
 
-    @media only screen and (min-width: $screen-mobile) {
+    @include for-mobile-up {
         width: 180px;
         height: 180px;
         margin-left: 40px;
     }
-    @media only screen and (min-width: $screen-tablet) {
+    @include for-tablet-up {
         width: 250px;
         height: 250px;
     }

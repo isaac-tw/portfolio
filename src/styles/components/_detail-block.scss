@@ -3,7 +3,7 @@ $detail-block-margin-bottom: 3vw;
 .detail-block {
   margin-bottom: $detail-block-margin-bottom;
 
-  @media only screen and (min-width: $screen-laptop) {
+  @include for-laptop-up {
     margin-bottom: 5vw;
   }
 }

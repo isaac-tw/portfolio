@@ -13,7 +13,7 @@
         margin-bottom: $detail-block-margin-bottom;
     }
 
-    @media only screen and (min-width: $screen-laptop) {
+    @include for-laptop-up {
         >img {
             margin-bottom: unset;
         }

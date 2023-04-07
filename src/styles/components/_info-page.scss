@@ -3,10 +3,10 @@
   // top = height + margin-bottom + padding-bottom of the nav
   top: 42vw;
 
-  @media only screen and (min-width: $screen-mobile) {
+  @include for-mobile-up {
     top: 23vw;
   }
-  @media only screen and (min-width: $screen-tablet) {
+  @include for-tablet-up {
     top: 13vw;
   }
 }

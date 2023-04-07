@@ -3,7 +3,7 @@
 
   padding: 0 4%;
 
-  @media only screen and (min-width: $screen-tablet) {
+  @include for-tablet-up {
     padding: 0 9%;
   }
 }

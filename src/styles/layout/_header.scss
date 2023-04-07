@@ -12,12 +12,12 @@
   margin-bottom: 8vw;
   padding-bottom: 6vw;
 
-  @media only screen and (min-width: $screen-mobile) {
+  @include for-mobile-up {
       height: 14.5vw;
       margin-bottom: 5vw;
       padding-bottom: 3.5vw;
   }
-  @media only screen and (min-width: $screen-tablet) {
+  @include for-tablet-up {
       height: 6.5vw;
       margin-bottom: 4.5vw;
       padding-bottom: 2vw;
@@ -30,7 +30,7 @@
   justify-content: space-between;
   width: 100%;
 
-  @media only screen and (min-width: $screen-mobile) {
+  @include for-mobile-up {
     display: flex;
   }
 
@@ -42,10 +42,10 @@
 
     display: flex;
 
-    @media only screen and (min-width: $screen-mobile) {
+    @include for-mobile-up {
       display: block;
     }
-    @media only screen and (min-width: $screen-tablet) {
+    @include for-tablet-up {
       display: flex;
     }
   }
@@ -56,7 +56,7 @@
     display: flex;
     margin-top: 1.4rem;
 
-    @media only screen and (min-width: $screen-mobile) {
+    @include for-mobile-up {
       margin-top: 0;
     }
 

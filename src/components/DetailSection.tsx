@@ -125,7 +125,9 @@ export default function DetailSection({
                   laptop={12 / detail.length}
                   key={index}
                 >
-                  <LazyLoad height={height} once resize>
+                  {/* The layout is a block after a block, so setting offset = height usually means
+                  a long as a block is visible in viewport, we start loading the next image */}
+                  <LazyLoad height={height} once offset={height} resize>
                     {renderDetail(id, item, width, height)}
                   </LazyLoad>
                 </Grid>

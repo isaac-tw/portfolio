@@ -24,7 +24,7 @@ export default function ProjectCard({
         <Link to={`/work/${id}`}>
           {/* Although this might be a rare case, */}
           {/* LazyLoad can make <img /> with the same src into different assets */}
-          <LazyLoad once>
+          <LazyLoad once offset={200}>
             <div>
               <img
                 className="hoverable-img--front"

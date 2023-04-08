@@ -14,7 +14,7 @@ import router from './routes/configure'
 // 9. Update all ts in codebase
 // 10. mailto
 // 11. reCAPTCHA
-// 12. Lazyload offset
+// (DONE) 12. Lazyload offset
 // (DONE) 13. Change @media to @mixin
 
 function App() {

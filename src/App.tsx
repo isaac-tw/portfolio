@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { createContext, useReducer } from "react";
 import { RouterProvider } from "react-router-dom";
-import router from './routes/configure'
+import router from "./routes/configure";
+import dialogReducer from "./components/shared/Dialog/reducer";
+import { dialog as initialState } from "./initialStates";
 
 // TODO:
 // (DONE) 1. Set route to get project -> /work/luggageplus
@@ -17,12 +19,27 @@ import router from './routes/configure'
 // (DONE) 12. Lazyload offset
 // (DONE) 13. Change @media to @mixin
 
-function App() {
+type InitialStateType = {
+  open: boolean;
+  title: string | null;
+  bodyComponent: React.ElementType | null;
+}
+
+export const ReducerContext = createContext<{
+  state: InitialStateType;
+  dispatch: React.Dispatch<any>;
+}>({
+  state: initialState,
+  dispatch: () => null
+});
+
+export default function App() {
+  const [state, dispatch] = useReducer(dialogReducer, initialState);
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <ReducerContext.Provider value={{state, dispatch}}>
+        <RouterProvider router={router} />
+      </ReducerContext.Provider>
     </div>
   );
 }
-
-export default App;

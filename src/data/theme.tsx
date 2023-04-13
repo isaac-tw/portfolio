@@ -61,6 +61,7 @@ theme.components = {
     styleOverrides: {
       tooltip: {
         fontSize: "1.6rem",
+        fontWeight: '300',
         [theme.breakpoints.up("mobile")]: {
             fontSize: "1.2rem",
         },

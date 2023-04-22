@@ -12,8 +12,8 @@ import router from './routes/configure'
 // 7. Linter
 // 8. Remove all default stuffs
 // 9. Update all ts in codebase
-// 10. mailto
-// 11. reCAPTCHA
+// (DONE) 10. mailto
+// (SKIP) 11. reCAPTCHA
 // (DONE) 12. Lazyload offset
 // (DONE) 13. Change @media to @mixin
 

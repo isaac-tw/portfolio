@@ -17,7 +17,7 @@ export default function NavBar() {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    Misc
+                    misc.
                 </a><div className='divider'>/</div>
                 <NavLink to="about">About</NavLink><div className='divider'>/</div>
                 {/* <span onClick={() => console.log('Contact')}>Contact</span> */}

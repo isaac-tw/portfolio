@@ -1,40 +1,13 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import about from '../data/about.json'
-
-interface Education {
-  Degree: string;
-  School: string;
-  Duration: string;
-  Additional?: string;
-}
-interface Experience {
-  Title: string;
-  'Company name': string;
-  Duration: string;
-  Additional?: string;
-}
-interface Activity {
-  Name: string;
-  Organization?: string;
-  Duration: string;
-  Additional?: string;
-}
-interface Skill {
-  Language?: string;
-  '3D Modeling'?: string;
-  Adobe?: string;
-  Programming?: string;
-  Other?: string;
-}
-
-interface About {
-  Description: string;
-  Education: Education[];
-  Experience: Experience[];
-  Activity: Activity[];
-  Skill: Skill[];
-}
+import {
+  Education,
+  Experience,
+  Activity,
+  Skill,
+  About,
+} from '../interfaces';
 
 const aboutData: About = about;
 

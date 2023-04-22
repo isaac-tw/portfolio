@@ -4,28 +4,7 @@ import { useScrollDirection } from "react-use-scroll-direction";
 import DetailSection from "./DetailSection";
 import projects from "../data/projects.js";
 import { getWidthAndHeight } from "../utils/utils";
-
-interface Project {
-  details: object;
-  dimensions: string;
-  duration: string;
-  id: string;
-  name: string;
-  note?: string;
-  subtitle: string;
-  year: number;
-}
-
-interface Projects {
-  "candle-chair": Project;
-  duplo: Project;
-  deepsense: Project;
-  luggageplus: Project;
-  magprint: Project;
-  "o-assist": Project;
-  "remote-control-redesign": Project;
-  "searching-ball": Project;
-}
+import { Projects } from "../interfaces";
 
 export async function loader({ params }: any) {
   const project = projects[params.projectId as keyof Projects];

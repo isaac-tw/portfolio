@@ -6,15 +6,7 @@ import LazyLoad from "react-lazyload";
 import { useInViewport } from "react-in-viewport";
 import { fadeTransitionProps } from "../utils/constants";
 import { getWidthAndHeight } from "../utils/utils";
-
-interface Item {
-  component?: ElementType;
-  file?: string;
-  format: string;
-  dimensions?: string;
-  keyWord?: string;
-  src?: string;
-}
+import { Item } from "../interfaces";
 
 const renderDetail = (
   id: string,

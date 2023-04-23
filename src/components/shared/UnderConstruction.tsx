@@ -6,30 +6,26 @@ export default function UnderConstruction({
   subject: string;
 }): JSX.Element {
   return (
-    <div className="under-construction">
-      <div className="under-construction__content">
-        <div className="under-construction__message">
-          <div className="under-construction__word--subject">
-            Content
-          </div>
-          <div className="under-construction__word--under-construction">
+    <div className='under-construction'>
+      <div className='under-construction__content'>
+        <div className='under-construction__message'>
+          <div className='under-construction__word--subject'>Content</div>
+          <div className='under-construction__word--under-construction'>
             Under
-            <br/>
+            <br />
             Construction
           </div>
         </div>
         <img
-          className="under-construction__img"
+          className='under-construction__img'
           src={require('../../assets/misc/profile_IsaacHuang.png')}
-          alt="profile_IsaacHuang"
+          alt='profile_IsaacHuang'
         />
       </div>
-      <div className="under-construction__inquiries">
+      <div className='under-construction__inquiries'>
         Please feel free to contact me for any inquiries:
-        <br/>
-        <a href="mailto:isaac.huang.tw@gmail.com">
-          isaac.huang.tw@gmail.com
-        </a>
+        <br />
+        <a href='mailto:isaac.huang.tw@gmail.com'>isaac.huang.tw@gmail.com</a>
       </div>
     </div>
   );

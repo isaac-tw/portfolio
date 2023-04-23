@@ -19,7 +19,7 @@ import router from './routes/configure';
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <div className='App'>
       <RouterProvider router={router} />
     </div>
   );

@@ -24,17 +24,15 @@ export default function ProjectGrid(): JSX.Element {
           desktop: 6
         }}
       >
-        {
-          Object.entries(projects).map(([key, value]) => (
-            <Grid key={key} mobileOld={12} mobile={6} laptop={4}>
-              <ProjectCard
-                id={value.id}
-                name={value.name}
-                subtitle={value.subtitle}
-              />
-            </Grid>
-          ))
-        }
+        {Object.entries(projects).map(([key, value]) => (
+          <Grid key={key} mobileOld={12} mobile={6} laptop={4}>
+            <ProjectCard
+              id={value.id}
+              name={value.name}
+              subtitle={value.subtitle}
+            />
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );

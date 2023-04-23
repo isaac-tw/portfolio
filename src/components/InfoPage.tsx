@@ -38,63 +38,56 @@ export default function InfoPage(): JSX.Element {
   const infoPageOffsetTop = infoPageRef.current?.offsetTop ?? 0;
   const infoPageCapOffsetHeight = infoPageCapRef.current?.offsetHeight ?? 0;
 
-  const coverStyle = useMemo(() => (innerHeight < infoPageOffsetTop + coverHeight + infoPageCapOffsetHeight)
-    ? {
-        // 0.5 = innerHeight - 0.5 * innerHeight: make sure the caption shows till half of the innerHeight
-        top: 0.5 * innerHeight - (coverHeight + infoPageCapOffsetHeight)
-      }
-    : {}
-  , [innerHeight, infoPageOffsetTop, coverHeight, infoPageCapOffsetHeight]);
-
-  const infoPageCover = useMemo(
-    () => {
-      let frontImgSrc;
-      let backImgSrc;
-      try {
-        frontImgSrc = require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.jpg`);
-        backImgSrc = require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.jpg`);
-      } catch (e) {}
-
-      return (
-        <div
-          className="info-page__cover"
-          style={coverStyle}
-        >
-          <img
-            className="hoverable-img--front"
-            src={frontImgSrc}
-            alt={`${name}`}
-            width="1920px"
-            height="1080px"
-          />
-          <img
-            className="hoverable-img"
-            src={backImgSrc ?? frontImgSrc}
-            alt={`${name}`}
-            width="1920px"
-            height="1080px"
-          />
-          <div
-            className="info-page__caption rfs-main"
-            ref={infoPageCapRef}
-          >
-            {year}
-            {(duration !== '') ? <span> / {duration}</span> : null}
-            {(note !== undefined && note !== '') ? <div className="info-page__caption--note rfs-cap">{note}</div> : null}
-          </div>
-        </div>
-      );
-    },
-    [id, coverStyle, name, note, year, duration]
+  const coverStyle = useMemo(
+    () =>
+      innerHeight < infoPageOffsetTop + coverHeight + infoPageCapOffsetHeight
+        ? {
+            // 0.5 = innerHeight - 0.5 * innerHeight: make sure the caption shows till half of the innerHeight
+            top: 0.5 * innerHeight - (coverHeight + infoPageCapOffsetHeight)
+          }
+        : {},
+    [innerHeight, infoPageOffsetTop, coverHeight, infoPageCapOffsetHeight]
   );
 
+  const infoPageCover = useMemo(() => {
+    let frontImgSrc;
+    let backImgSrc;
+    try {
+      frontImgSrc = require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.jpg`);
+      backImgSrc = require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.jpg`);
+    } catch (e) {}
+
+    return (
+      <div className='info-page__cover' style={coverStyle}>
+        <img
+          className='hoverable-img--front'
+          src={frontImgSrc}
+          alt={`${name}`}
+          width='1920px'
+          height='1080px'
+        />
+        <img
+          className='hoverable-img'
+          src={backImgSrc ?? frontImgSrc}
+          alt={`${name}`}
+          width='1920px'
+          height='1080px'
+        />
+        <div className='info-page__caption rfs-main' ref={infoPageCapRef}>
+          {year}
+          {duration !== '' ? <span> / {duration}</span> : null}
+          {note !== undefined && note !== ''
+            ? <div className='info-page__caption--note rfs-cap'>{note}</div>
+            : null}
+        </div>
+      </div>
+    );
+  }, [id, coverStyle, name, note, year, duration]);
+
   return (
-    <div
-      className="info-page"
-      ref={infoPageRef}
-    >
+    <div className='info-page' ref={infoPageRef}>
       {infoPageCover}
-      <div className="info-page__content">
+      <div className='info-page__content'>
         {details.map((detail, index) => (
           <DetailSection
             clientWidth={clientWidth}

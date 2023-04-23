@@ -18,5 +18,23 @@ module.exports = {
     'react'
   ],
   rules: {
+    semi: 'off',
+    '@typescript-eslint/semi': ['warn', 'always'],
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': ['error', 'never'],
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'semi',
+          requireLast: true
+        },
+        singleline: {
+          delimiter: 'semi',
+          requireLast: false
+        },
+        multilineDetection: 'brackets'
+      }
+    ]
   }
-}
+};

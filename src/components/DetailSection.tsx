@@ -1,31 +1,34 @@
-import React, { ElementType, useMemo, useRef } from "react";
-import Box from "@mui/material/Box";
-import Fade from "@mui/material/Fade";
-import Grid from "@mui/material/Unstable_Grid2";
-import LazyLoad from "react-lazyload";
-import { useInViewport } from "react-in-viewport";
-import { fadeTransitionProps } from "../utils/constants";
-import { getWidthAndHeight } from "../utils/utils";
-import { Item } from "../interfaces";
+import React, { useMemo, useRef } from 'react';
+import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Grid from '@mui/material/Unstable_Grid2';
+import LazyLoad from 'react-lazyload';
+import { useInViewport } from 'react-in-viewport';
+import { fadeTransitionProps } from '../utils/constants';
+import { getWidthAndHeight } from '../utils/utils';
+import { type Item } from '../interfaces';
 
 const renderDetail = (
   id: string,
   item: Item,
   width: number,
-  height: number,
-) => {
-    if (!item.file) return null;
-    switch (item.format) {
-      case "quote":
-        return (
+  height: number
+): JSX.Element | null => {
+  if (item.file === undefined) return null;
+
+  switch (item.format) {
+    case 'quote':
+      return (
           <div className="detail-block__quote rfs-quote" style={{ height }}>
             {item.file}
           </div>
-        );
-      case "linkQuote":
-        const keywordIndex = item.file.indexOf(item.keyWord || "");
-        if (keywordIndex === -1) return null;
-        return (
+      );
+    case 'linkQuote': {
+      if (item.keyWord === undefined) return null;
+
+      const keywordIndex = item.file.indexOf(item.keyWord);
+      if (keywordIndex === -1) return null;
+      return (
           <div className="detail-block__link-quote rfs-quote" style={{ height }}>
             <div>
               {item.file.substring(0, keywordIndex)}
@@ -39,11 +42,12 @@ const renderDetail = (
               </a>
           </div>
           </div>
-        );
-      case "jpg":
-      case "png":
-      case "gif":
-        return (
+      );
+    };
+    case 'jpg':
+    case 'png':
+    case 'gif':
+      return (
           <img
             className="detail-block__img"
             src={require(`../assets/${id}/details/${id}_${item.file}_IsaacHuang.${item.format}`)}
@@ -51,9 +55,9 @@ const renderDetail = (
             width={width}
             height={height}
           />
-        );
-      case "vimeo":
-        return (
+      );
+    case 'vimeo':
+      return (
           <>
             <div className="detail-block__vimeo">
               <iframe
@@ -67,25 +71,25 @@ const renderDetail = (
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </>
-        );
-      case "component":
-        return item.component ? React.createElement(item.component) : null;
-      default:
-        return null;
-    }
+      );
+    case 'component':
+      return (item.component !== undefined) ? React.createElement(item.component) : null;
+    default:
+      return null;
+  }
 };
 
 export default function DetailSection({
   clientWidth,
   detail,
   id,
-  isScrollingDown,
+  isScrollingDown
 }: {
   clientWidth: number;
-  detail: Array<Item>;
+  detail: Item[];
   id: string;
   isScrollingDown: boolean;
-}) {
+}): JSX.Element {
   const containerRef = useRef<HTMLHeadingElement>(null);
   const { inViewport } = useInViewport(containerRef);
 
@@ -99,13 +103,13 @@ export default function DetailSection({
               mobileOld: 2,
               mobile: 2,
               tablet: 2,
-              laptop: 0,
+              laptop: 0
             }}
             columnSpacing={{
               mobileOld: 0,
               mobile: 0,
               tablet: 0,
-              laptop: 2,
+              laptop: 2
             }}
           >
             {detail.map((item, index) => {

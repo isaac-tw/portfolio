@@ -1,14 +1,15 @@
+import React from 'react';
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Route,
-} from "react-router-dom";
+  Route
+} from 'react-router-dom';
 
 import About from '../components/About';
 import ErrorPage from '../components/ErrorPage';
 import Home from '../components/Home';
 import InfoPage, {
-  loader as infoPageLoader,
+  loader as infoPageLoader
 } from '../components/InfoPage';
 import ProjectGrid from '../components/ProjectGrid';
 
@@ -28,7 +29,7 @@ const routes = createRoutesFromElements(
 
 const router = createBrowserRouter(
   routes,
-  { basename: "/" },
+  { basename: '/' }
 );
 
 export default router;

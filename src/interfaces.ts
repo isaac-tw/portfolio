@@ -1,4 +1,4 @@
-import React, { ElementType } from "react";
+import { type ElementType } from 'react';
 
 export interface Education {
   Degree: string;
@@ -9,7 +9,7 @@ export interface Education {
 
 export interface Experience {
   Title: string;
-  "Company name": string;
+  'Company name': string;
   Duration: string;
   Additional?: string;
 }
@@ -23,7 +23,7 @@ export interface Activity {
 
 export interface Skill {
   Language?: string;
-  "3D Modeling"?: string;
+  '3D Modeling'?: string;
   Adobe?: string;
   Programming?: string;
   Other?: string;
@@ -47,8 +47,7 @@ export interface Item {
 }
 
 export interface Project {
-  details: object;
-  dimensions: string;
+  details: Item[][];
   duration: string;
   id: string;
   name: string;
@@ -58,12 +57,12 @@ export interface Project {
 }
 
 export interface Projects {
-  "candle-chair": Project;
+  'candle-chair': Project;
   duplo: Project;
   deepsense: Project;
   luggageplus: Project;
   magprint: Project;
-  "o-assist": Project;
-  "remote-control-redesign": Project;
-  "searching-ball": Project;
+  'o-assist': Project;
+  'remote-control-redesign': Project;
+  'searching-ball': Project;
 }

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default function OassistIntro() {
+export default function OassistIntro(): JSX.Element {
   return (
     <div className="intro">
       <div className="intro__title">Could machines actively manage human mental health in the future?</div>

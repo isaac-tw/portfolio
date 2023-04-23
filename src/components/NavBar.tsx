@@ -1,14 +1,14 @@
-import React from "react";
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-export default function NavBar() {
-    const renderIcon = () => (
+export default function NavBar(): JSX.Element {
+  const renderIcon = (): JSX.Element => (
             <Link to="/" className='icon'>
                 <div className='first-name'>Wei-Chun&nbsp;</div>
                 <div className='last-name'>Huang</div>
             </Link>
-        );
-    const renderTabs = () => (
+  );
+  const renderTabs = (): JSX.Element => (
         <div className='tabs'>
             <nav className="elements">
                 <NavLink to="/">Work</NavLink><div className='divider'>/</div>
@@ -24,14 +24,14 @@ export default function NavBar() {
                 <a href="mailto:isaac.huang.tw@gmail.com">Contact</a>
             </nav>
         </div>
-    );
+  );
 
-    return (
+  return (
         <div className='nav'>
             <div className='nav__bar rfs-main'>
                 {renderIcon()}
                 {renderTabs()}
             </div>
         </div>
-    );
+  );
 }

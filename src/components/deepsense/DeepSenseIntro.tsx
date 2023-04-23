@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default function DeepSenseIntro() {
+export default function DeepSenseIntro(): JSX.Element {
   return (
     <div className="intro">
       <div className="intro__title">

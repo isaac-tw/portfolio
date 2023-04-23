@@ -5,21 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './data/theme';
-import ReactGA from "react-ga4";
+import ReactGA from 'react-ga4';
 
 ReactGA.initialize([
   {
-    trackingId: "G-7PKHRMDY9J",
+    trackingId: 'G-7PKHRMDY9J',
     gaOptions: {
-      debug_mode: true,
+      debug_mode: true
     },
     gtagOptions: {
-      debug_mode: true,
-    },
-  },
+      debug_mode: true
+    }
+  }
 ]);
 
-ReactGA.send("Hello pageview!");
+ReactGA.send('Hello pageview!');
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

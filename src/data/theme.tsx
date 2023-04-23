@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles';
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface BreakpointOverrides {
     xs: true;
     sm: true;
@@ -15,7 +15,7 @@ declare module "@mui/material/styles" {
   }
 }
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface TypographyVariants {
     cardTitle: React.CSSProperties;
     cardSubtitle: React.CSSProperties;
@@ -27,7 +27,7 @@ declare module "@mui/material/styles" {
   }
 }
 
-declare module "@mui/material/Typography" {
+declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     cardTitle: true;
     cardSubtitle: true;
@@ -46,12 +46,12 @@ export const baseTheme = {
       mobile: 350,
       tablet: 600,
       laptop: 1024,
-      desktop: 1536,
-    },
+      desktop: 1536
+    }
   },
   typography: {
-    fontFamily: '"Karla", sans-serif',
-  },
+    fontFamily: '"Karla", sans-serif'
+  }
 };
 
 const theme = createTheme(baseTheme);
@@ -60,20 +60,20 @@ theme.components = {
   MuiTooltip: {
     styleOverrides: {
       tooltip: {
-        fontSize: "1.6rem",
+        fontSize: '1.6rem',
         fontWeight: '300',
-        [theme.breakpoints.up("mobile")]: {
-            fontSize: "1.2rem",
+        [theme.breakpoints.up('mobile')]: {
+          fontSize: '1.2rem'
         },
-        [theme.breakpoints.up("tablet")]: {
-            fontSize: "1.5rem",
+        [theme.breakpoints.up('tablet')]: {
+          fontSize: '1.5rem'
         },
-        [theme.breakpoints.up("laptop")]: {
-            fontSize: "1.8rem",
-        },
-      },
-    },
-  },
+        [theme.breakpoints.up('laptop')]: {
+          fontSize: '1.8rem'
+        }
+      }
+    }
+  }
 };
 
 export default theme;

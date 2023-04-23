@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function ErrorPage({
-  subject,
+  subject
 }: {
   subject: string;
-}) {
+}): JSX.Element {
   return (
     <div className="error-page">
       <div className="error-page__content">
@@ -20,7 +20,7 @@ export default function ErrorPage({
         </div>
         <img
           className="error-page__img"
-          src={require(`../assets/misc/profile_IsaacHuang.png`)}
+          src={require('../assets/misc/profile_IsaacHuang.png')}
           alt="profile_IsaacHuang"
         />
       </div>

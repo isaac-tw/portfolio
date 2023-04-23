@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard';
 // import projects from '../data/projects_test.json'
-import projects from '../data/projects.js'
+import projects from '../data/projects.js';
 
-export default function ProjectGrid() {
+export default function ProjectGrid(): JSX.Element {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -14,14 +14,14 @@ export default function ProjectGrid() {
           mobileOld: 2.5,
           mobile: 4,
           tablet: 5,
-          laptop: 7,
+          laptop: 7
         }}
         columnSpacing={{
           mobileOld: 0,
           mobile: 2.5,
           tablet: 3.5,
           laptop: 4.5,
-          desktop: 6,
+          desktop: 6
         }}
       >
         {

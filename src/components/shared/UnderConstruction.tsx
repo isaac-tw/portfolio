@@ -1,10 +1,12 @@
 import React from 'react';
 
+interface UnderConstructionProps {
+  subject: string;
+}
+
 export default function UnderConstruction({
   subject
-}: {
-  subject: string;
-}): JSX.Element {
+}: UnderConstructionProps): JSX.Element {
   return (
     <div className='under-construction'>
       <div className='under-construction__content'>

@@ -3,15 +3,17 @@ import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
 
+interface ProjectCardProps {
+  id: string;
+  name: string;
+  subtitle: string;
+}
+
 export default function ProjectCard({
   id,
   name,
   subtitle
-}: {
-  id: string;
-  name: string;
-  subtitle: string;
-}): JSX.Element {
+}: ProjectCardProps): JSX.Element {
   let frontImgSrc;
   let backImgSrc;
   try {

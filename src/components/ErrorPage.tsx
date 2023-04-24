@@ -1,10 +1,12 @@
 import React from 'react';
 
+interface ErrorPageProps {
+  subject: string;
+}
+
 export default function ErrorPage({
   subject
-}: {
-  subject: string;
-}): JSX.Element {
+}: ErrorPageProps): JSX.Element {
   return (
     <div className='error-page'>
       <div className='error-page__content'>

@@ -30,7 +30,7 @@ export interface Skill {
 }
 
 export interface About {
-  Description: string;
+  Description: string[];
   Education: Education[];
   Experience: Experience[];
   Activity: Activity[];

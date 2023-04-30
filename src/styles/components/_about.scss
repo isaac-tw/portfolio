@@ -1,67 +1,84 @@
-.about {
-    color: $dark-grey;
-    .description {
-        line-height: 1.6;
-        text-align: left;
+.info-title {
+  color: $dark-grey;
+  text-transform: uppercase;
 
-        white-space: pre-line;
+  @include for-mobileOld-up {
+    margin-bottom: 1.2rem;
+  }
 
-        @include for-mobileOld-up {
-            margin-top: .4rem;
-        }
-    
-        @include for-mobile-up {
-            margin-top: .8rem;
-        }
-    
-        @include for-laptop-up {
-            margin-top: 1.2rem;
-        }
-    }
+  @include for-mobile-up {
+    margin-bottom: 1.6rem;
+  }
 
-    .title {
-        font-weight: bolder;
-        line-height: 1.6;
-        text-align: left;
+  @include for-laptop-up {
+    margin-bottom: 2rem;
+  }
+}
 
-        margin-top: 1.2rem;
-        margin-bottom: 0.1rem;
+.info-items {
+  color: $dark-grey;
+}
 
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+.info-items__description {
+  line-height: 1.6;
+  text-align: left;
 
-        @include for-mobileOld-up {
-            margin-top: .4rem;
-        }
-    
-        @include for-mobile-up {
-            margin-top: .8rem;
-        }
-    
-        @include for-laptop-up {
-            margin-top: 1.2rem;
-        }
-    }
+  white-space: pre-line;
 
-    .subtitle {
-        line-height: 1.2;
-        text-align: left;
+  @include for-mobileOld-up {
+    margin-top: 0.4rem;
+  }
 
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  @include for-mobile-up {
+    margin-top: 0.8rem;
+  }
 
-    .caption {
-        color: $light-grey;
-        line-height: 1.2;
-        text-align: left;
+  @include for-laptop-up {
+    margin-top: 1.2rem;
+  }
+}
 
-        margin-top: 0.6rem;
+.info-items__title {
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: left;
 
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  margin-bottom: 0.1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include for-mobileOld-up {
+    margin-top: 0.4rem;
+  }
+
+  @include for-mobile-up {
+    margin-top: 0.8rem;
+  }
+
+  @include for-laptop-up {
+    margin-top: 1.2rem;
+  }
+}
+
+.info-items__subtitle {
+  line-height: 1.2;
+  text-align: left;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-items__caption {
+  color: $light-grey;
+  line-height: 1.2;
+  text-align: left;
+
+  margin-top: 0.6rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

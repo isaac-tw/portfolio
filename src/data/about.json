@@ -1,85 +1,87 @@
 {
-    "Description": "Isaac (Wei-Chun) Huang is a multidisciplinary Taiwanese designer with backgrounds in industrial design and computer science. He is interested in technology and likes to bring innovative ideas to life. He doesn’t really like rules and doesn’t mind breaking them if necessary. \n\nBefore studying Innovation Design Engineering. He and his partner won a pitch and got fund from the Taiwan Ministry of Culture and founded a company which committed to original design and \"Made-in-Taiwan\" illustrated goods.",
-    "Education": [
-        {
-            "Degree": "MA / MSc, Innovation Design Engineering",
-            "School": "Royal College of Art / Imperial College London",
-            "Duration": "2018 - 2020",
-            "Additional": "Scholarship: GSSA, Ministry of Education, Taiwan"
-        },
-        {
-            "Degree": "MSc, Industrial Design",
-            "School": "National Cheng Kung University, Taiwan",
-            "Duration": "2014 - 2016"
-        },
-        {
-            "Degree": "BSc, Computer Science and Information Engineering",
-            "School": "National Taiwan Normal University, Taiwan",
-            "Duration": "2008 - 2012"
-        }
-    ],
-    "Experience": [
-        {
-            "Title": "Business Development Assistant / Co-founder",
-            "Company name": "Lynette Lin’s Illustration Studio",
-            "Duration": "04.2016 - Present",
-            "Additional": "Funding: Ministry of Culture, Taiwan"
-        },
-        {
-            "Title": "Teaching Assistant",
-            "Company name": "Department of Industrial Design, National Cheng Kung University",
-            "Duration": "03.2015 - 05.2016"
-        },
-        {
-            "Title": "Executive Editor",
-            "Company name": "College of Planning & Design, National Cheng Kung University",
-            "Duration": "06.2015 - 10.2015"
-        },
-        {
-            "Title": "Assistant",
-            "Company name": "Economic Development Section of Daan District Office, Taipei City",
-            "Duration": "07.2012 - 07.2013"
-        }
-    ],
-    "Activity": [
-        {
-            "Name": "Taiwan Design Industry Development Project",
-            "Organization": "Ministry of Economic Affairs, Taiwan",
-            "Duration": "12.2016 - 09.2017"
-        },
-        {
-            "Name": "2017 Creative Expo Taiwan",
-            "Duration": "19 - 23.04.2017"
-        },
-        {
-            "Name": "Dream Fulfilling Project",
-            "Organization": "Ministry of Culture, Taiwan",
-            "Duration": "04.2016 - 09.2016"
-        },
-        {
-            "Name": "Design and Culture Seminar",
-            "Duration": "13.05.2016"
-        },
-        {
-            "Name": "School Representative",
-            "Organization": "Museum of Contemporary Art, Taipei",
-            "Duration": "08.2010 - 02.2011"
-        },
-        {
-            "Name": "IT Volunteer",
-            "Organization": "Department of Tourism, Lienchiang County Government",
-            "Duration": "12 - 14.11.2010"
-        },
-        {
-            "Name": "Volunteer, Taipei Fringe Festival",
-            "Duration": "28.08.2010"
-        }
-    ],
-    "Skill": [
-        { "Language": "Mandarin, Taiwanese, English" },
-        { "3D Modeling": "Alias, KeyShot" },
-        { "Adobe": "Photoshop, Illustrator, InDesign, After Effects" },
-        { "Programming": "C, C++, C#, Java\nHTML5, CSS, JavaScript\nPython" },
-        { "Other": "Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
-    ]
+  "Description": [
+    "Isaac (Wei-Chun) Huang is a multidisciplinary Taiwanese designer with backgrounds in industrial design and computer science. He is interested in technology and likes to bring innovative ideas to life. He doesn’t really like rules and doesn’t mind breaking them if necessary. \n\nBefore studying Innovation Design Engineering. He and his partner won a pitch and got fund from the Taiwan Ministry of Culture and founded a company which committed to original design and \"Made-in-Taiwan\" illustrated goods."
+  ],
+  "Education": [
+    {
+      "Degree": "MA / MSc, Innovation Design Engineering",
+      "School": "Royal College of Art / Imperial College London",
+      "Duration": "2018 - 2020",
+      "Additional": "Scholarship: GSSA, Ministry of Education, Taiwan"
+    },
+    {
+      "Degree": "MSc, Industrial Design",
+      "School": "National Cheng Kung University, Taiwan",
+      "Duration": "2014 - 2016"
+    },
+    {
+      "Degree": "BSc, Computer Science and Information Engineering",
+      "School": "National Taiwan Normal University, Taiwan",
+      "Duration": "2008 - 2012"
+    }
+  ],
+  "Experience": [
+    {
+      "Title": "Business Development Assistant / Co-founder",
+      "Company name": "Lynette Lin’s Illustration Studio",
+      "Duration": "04.2016 - Present",
+      "Additional": "Funding: Ministry of Culture, Taiwan"
+    },
+    {
+      "Title": "Teaching Assistant",
+      "Company name": "Department of Industrial Design, National Cheng Kung University",
+      "Duration": "03.2015 - 05.2016"
+    },
+    {
+      "Title": "Executive Editor",
+      "Company name": "College of Planning & Design, National Cheng Kung University",
+      "Duration": "06.2015 - 10.2015"
+    },
+    {
+      "Title": "Assistant",
+      "Company name": "Economic Development Section of Daan District Office, Taipei City",
+      "Duration": "07.2012 - 07.2013"
+    }
+  ],
+  "Activity": [
+    {
+      "Name": "Taiwan Design Industry Development Project",
+      "Organization": "Ministry of Economic Affairs, Taiwan",
+      "Duration": "12.2016 - 09.2017"
+    },
+    {
+      "Name": "2017 Creative Expo Taiwan",
+      "Duration": "19 - 23.04.2017"
+    },
+    {
+      "Name": "Dream Fulfilling Project",
+      "Organization": "Ministry of Culture, Taiwan",
+      "Duration": "04.2016 - 09.2016"
+    },
+    {
+      "Name": "Design and Culture Seminar",
+      "Duration": "13.05.2016"
+    },
+    {
+      "Name": "School Representative",
+      "Organization": "Museum of Contemporary Art, Taipei",
+      "Duration": "08.2010 - 02.2011"
+    },
+    {
+      "Name": "IT Volunteer",
+      "Organization": "Department of Tourism, Lienchiang County Government",
+      "Duration": "12 - 14.11.2010"
+    },
+    {
+      "Name": "Volunteer, Taipei Fringe Festival",
+      "Duration": "28.08.2010"
+    }
+  ],
+  "Skill": [
+    { "Language": "Mandarin, Taiwanese, English" },
+    { "3D Modeling": "Alias, KeyShot" },
+    { "Adobe": "Photoshop, Illustrator, InDesign, After Effects" },
+    { "Programming": "C, C++, C#, Java\nHTML5, CSS, JavaScript\nPython" },
+    { "Other": "Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
+  ]
 }

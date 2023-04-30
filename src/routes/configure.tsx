@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import About from '../components/About';
+import AboutSection from '../components/AboutSection';
 import ErrorPage from '../components/ErrorPage';
 import Home from '../components/Home';
 import InfoPage, {
@@ -16,7 +16,7 @@ import ProjectGrid from '../components/ProjectGrid';
 const routes = createRoutesFromElements(
   <Route path="/" element={<Home />}>
     <Route index element={<ProjectGrid />} />
-    <Route path="about" element={<About />} />
+    <Route path="about" element={<AboutSection />} />
     <Route
       path="work/:projectId"
       element={<InfoPage />}

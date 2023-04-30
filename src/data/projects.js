@@ -8,13 +8,13 @@ import remoteControlRedesign from './remote-control-redesign.json';
 import searchingBall from './searching-ball.json';
 
 const projects = {
-  'candle-chair': candleChair,
-  duplo,
-  deepsense,
-  luggageplus,
-  magprint,
-  'o-assist': oAssist,
   'remote-control-redesign': remoteControlRedesign,
+  luggageplus,
+  'o-assist': oAssist,
+  deepsense,
+  'candle-chair': candleChair,
+  magprint,
+  duplo,
   'searching-ball': searchingBall
 };
 

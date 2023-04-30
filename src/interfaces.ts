@@ -12,6 +12,7 @@ export interface Experience {
   'Company name': string;
   Duration: string;
   Additional?: string;
+  url?: string;
 }
 
 export interface Activity {

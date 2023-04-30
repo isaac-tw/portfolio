@@ -42,9 +42,9 @@ export default function InfoPage(): JSX.Element {
     () =>
       innerHeight < infoPageOffsetTop + coverHeight + infoPageCapOffsetHeight
         ? {
-            // 0.5 = innerHeight - 0.5 * innerHeight: make sure the caption shows till half of the innerHeight
-            top: 0.5 * innerHeight - (coverHeight + infoPageCapOffsetHeight)
-          }
+          // 0.5 = innerHeight - 0.5 * innerHeight: make sure the caption shows till half of the innerHeight
+          top: 0.5 * innerHeight - (coverHeight + infoPageCapOffsetHeight)
+        }
         : {},
     [innerHeight, infoPageOffsetTop, coverHeight, infoPageCapOffsetHeight]
   );

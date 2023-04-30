@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ddff7b4.css",
-    "main.js": "/static/js/main.0b6476ce.js",
+    "main.css": "/static/css/main.76feb595.css",
+    "main.js": "/static/js/main.afb3274c.js",
     "static/js/886.fd0f2546.chunk.js": "/static/js/886.fd0f2546.chunk.js",
     "static/media/candle-chair_details-06_IsaacHuang.gif": "/static/media/candle-chair_details-06_IsaacHuang.a9a9e077c41cd15ccae5.gif",
     "static/media/o-assist_details-06_IsaacHuang.gif": "/static/media/o-assist_details-06_IsaacHuang.55c2e7a0ca0e736d3124.gif",
@@ -102,12 +102,12 @@
     "static/media/candle-chair_thumbnail-01_IsaacHuang.jpg": "/static/media/candle-chair_thumbnail-01_IsaacHuang.541bc1b0ba9ceaba4017.jpg",
     "static/media/candle-chair_thumbnail-02_IsaacHuang.jpg": "/static/media/candle-chair_thumbnail-02_IsaacHuang.cb00548b799689c0013d.jpg",
     "index.html": "/index.html",
-    "main.2ddff7b4.css.map": "/static/css/main.2ddff7b4.css.map",
-    "main.0b6476ce.js.map": "/static/js/main.0b6476ce.js.map",
+    "main.76feb595.css.map": "/static/css/main.76feb595.css.map",
+    "main.afb3274c.js.map": "/static/js/main.afb3274c.js.map",
     "886.fd0f2546.chunk.js.map": "/static/js/886.fd0f2546.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ddff7b4.css",
-    "static/js/main.0b6476ce.js"
+    "static/css/main.76feb595.css",
+    "static/js/main.afb3274c.js"
   ]
 }

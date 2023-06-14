@@ -1,6 +1,6 @@
 {
   "Description": [
-    "Isaac (Wei-Chun) Huang is a multidisciplinary Taiwanese designer with backgrounds in industrial design and computer science. He is interested in technology and likes to bring innovative ideas to life. He doesn’t really like rules and doesn’t mind breaking them if necessary. \n\nBefore studying Innovation Design Engineering. He and his partner won a pitch and got fund from the Taiwan Ministry of Culture and founded a company which committed to original design and \"Made-in-Taiwan\" illustrated goods."
+    "Isaac (Wei-Chun) Huang is a multidisciplinary Taiwanese engineer/designer with a background in computer science and industrial design. He is passionate about technology and driven to bring innovative ideas to life.\n\nAfter completing his studies in London, Isaac's strong desire to bridge the gap between concepts and tangible products propelled him to dive into the engineering field and pursue a career as a front-end software engineer. In this role, he collaborated with a diverse international team to introduce IoT solutions to the pharmaceutical industry."
   ],
   "Education": [
     {
@@ -21,6 +21,11 @@
     }
   ],
   "Experience": [
+    {
+      "Title": "Front-End Software Engineer, D&T",
+      "Company name": "West Pharmaceutical Services (was Exosite IoT Solutions)",
+      "Duration": "02.2021 - Present"
+    },
     {
       "Title": "Business Development Assistant / Co-founder",
       "Company name": "Lynette Lin’s Illustration Studio",
@@ -79,10 +84,11 @@
     }
   ],
   "Skill": [
-    { "Language": "Mandarin, Taiwanese, English" },
+    { "Language": "Mandarin (Native), English (Fluent)" },
+    { "Front-end": "HTML, CSS, JavaScript, TypeScript, React, Redux, Jest, Vue.js" },
+    { "Programming": "C, C++, C#, Java, Python" },
     { "3D Modeling": "Alias, KeyShot" },
     { "Adobe": "Photoshop, Illustrator, InDesign, After Effects" },
-    { "Programming": "C, C++, C#, Java\nHTML5, CSS, JavaScript\nPython" },
     { "Other": "Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
   ]
 }

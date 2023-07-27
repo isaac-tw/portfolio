@@ -89,6 +89,6 @@
     { "Programming": "C, C++, C#, Java, Python" },
     { "3D Modeling": "Alias, KeyShot" },
     { "Adobe": "Photoshop, Illustrator, InDesign, After Effects" },
-    { "Other": "Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
+    { "Other": "Figma, Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
   ]
 }

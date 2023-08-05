@@ -33,7 +33,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "pnpm run build",
-    "deploy": "echo www.isaac-tw.dev > ./build/CNAME && gh-pages -d build"
+    "deploy": "echo www.isaac-tw.dev > ./build/CNAME && gh-pages -d build",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -65,8 +66,10 @@
     "@types/react-lazyload": "^3.2.0",
     "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "cypress": "^12.17.3",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",

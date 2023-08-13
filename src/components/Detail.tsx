@@ -1,4 +1,7 @@
 import React from 'react';
+import 'photoswipe/dist/photoswipe.css';
+import { Gallery, Item as RPGItem } from 'react-photoswipe-gallery';
+
 import { type Item } from '../interfaces';
 
 interface DetailProps {
@@ -10,35 +13,41 @@ interface DetailProps {
 
 export default function Detail({
   id,
-  item,
+  item: {
+    component,
+    file,
+    format,
+    keyWord,
+    src
+  },
   width,
   height
 }: DetailProps): JSX.Element | null {
-  if (item.file === undefined) return null;
+  if (file === undefined) return null;
 
-  switch (item.format) {
+  switch (format) {
     case 'quote':
       return (
         <div className='detail-block__quote rfs-quote' style={{ height }}>
-          {item.file}
+          {file}
         </div>
       );
     case 'linkQuote': {
-      if (item.keyWord === undefined) return null;
+      if (keyWord === undefined) return null;
 
-      const keywordIndex = item.file.indexOf(item.keyWord);
+      const keywordIndex = file.indexOf(keyWord);
       if (keywordIndex === -1) return null;
       return (
         <div className='detail-block__link-quote rfs-quote' style={{ height }}>
           <div>
-            {item.file.substring(0, keywordIndex)}
+            {file.substring(0, keywordIndex)}
             <a
               className='detail-block__link-quote--link'
-              href={item.src}
+              href={src}
               target='_blank'
               rel='noreferrer noopener'
             >
-              {item.keyWord}
+              {keyWord}
             </a>
           </div>
         </div>
@@ -48,13 +57,24 @@ export default function Detail({
     case 'png':
     case 'gif':
       return (
-        <img
-          className='detail-block__img'
-          src={require(`../assets/${id}/details/${id}_${item.file}_IsaacHuang.${item.format}`)}
-          alt={item.file}
-          width={width}
-          height={height}
-        />
+        <Gallery>
+          <RPGItem
+            original={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
+            thumbnail={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
+            width={width}
+            height={height}
+          >
+            {({ ref, open }) => (
+              <img
+                className='detail-block__img'
+                alt={file}
+                src={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
+                ref={ref as React.MutableRefObject<HTMLImageElement>}
+                onClick={open}
+              />
+            )}
+          </RPGItem>
+        </Gallery>
       );
     case 'vimeo':
       return (
@@ -62,19 +82,19 @@ export default function Detail({
           <div className='detail-block__vimeo'>
             <iframe
               className='detail-block__vimeo--iframe'
-              src={item.src}
+              src={src}
               frameBorder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               allowFullScreen
-              title={item.file}
+              title={file}
             ></iframe>
           </div>
           <script src='https://player.vimeo.com/api/player.js'></script>
         </>
       );
     case 'component':
-      return item.component !== undefined
-        ? React.createElement(item.component)
+      return component !== undefined
+        ? React.createElement(component)
         : null;
     default:
       return null;

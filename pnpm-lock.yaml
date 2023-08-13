@@ -38,6 +38,9 @@ dependencies:
   match-sorter:
     specifier: ^6.3.1
     version: 6.3.1
+  photoswipe:
+    specifier: ^5.3.8
+    version: 5.3.8
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -53,6 +56,9 @@ dependencies:
   react-lazyload:
     specifier: ^3.2.0
     version: 3.2.0(react-dom@18.2.0)(react@18.2.0)
+  react-photoswipe-gallery:
+    specifier: ^2.2.7
+    version: 2.2.7(photoswipe@5.3.8)(prop-types@15.8.1)(react@18.2.0)
   react-router-dom:
     specifier: ^6.10.0
     version: 6.10.0(react-dom@18.2.0)(react@18.2.0)
@@ -7616,6 +7622,11 @@ packages:
     resolution: {integrity: sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==}
     dev: false
 
+  /photoswipe@5.3.8:
+    resolution: {integrity: sha512-4vTzOQt8GP4Chsm0s+8j2xDtVHAEN252PxrU12A1zXauNn0zD5HRHgjALKO2GKTyBnTnOrJUOxbV8LTrFIMrYw==}
+    engines: {node: '>= 0.12.0'}
+    dev: false
+
   /picocolors@0.2.1:
     resolution: {integrity: sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==}
     dev: false
@@ -8670,6 +8681,18 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-photoswipe-gallery@2.2.7(photoswipe@5.3.8)(prop-types@15.8.1)(react@18.2.0):
+    resolution: {integrity: sha512-AEYNoL4/IIRosIUonn4haaFQNn1ui4vdVgAY9LHd/imVamNCkqUcyWeT6317UILp/yJI2gohsd3lWmcJEbjCag==}
+    peerDependencies:
+      photoswipe: '>= 5.2.2'
+      prop-types: '>= 15.7.0'
+      react: '>= 16.8.0'
+    dependencies:
+      photoswipe: 5.3.8
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-refresh@0.11.0:

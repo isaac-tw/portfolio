@@ -5,13 +5,13 @@ interface UnderConstructionProps {
 }
 
 export default function UnderConstruction({
-  subject
+  subject = 'Content'
 }: UnderConstructionProps): JSX.Element {
   return (
     <div className='under-construction'>
       <div className='under-construction__content'>
         <div className='under-construction__message'>
-          <div className='under-construction__word--subject'>Content</div>
+          <div className='under-construction__word--subject'>{subject}</div>
           <div className='under-construction__word--under-construction'>
             Under
             <br />

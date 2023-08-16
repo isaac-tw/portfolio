@@ -1,5 +1,4 @@
 import React from 'react';
-import 'photoswipe/dist/photoswipe.css';
 import { Gallery, Item as RPGItem } from 'react-photoswipe-gallery';
 
 import { type Item } from '../interfaces';

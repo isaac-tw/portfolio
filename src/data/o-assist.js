@@ -25,12 +25,12 @@ const details = [
   ],
   [
     {
-      dimensions: '1920x1080',
+      dimensions: '1080x1080',
       file: 'details-02',
       format: 'jpg'
     },
     {
-      dimensions: '1920x1080',
+      dimensions: '1080x1080',
       file: 'details-03',
       format: 'jpg'
     }

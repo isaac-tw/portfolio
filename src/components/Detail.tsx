@@ -1,6 +1,5 @@
 import React from 'react';
-import { Gallery, Item as RPGItem } from 'react-photoswipe-gallery';
-
+import SingleImageGallery from './shared/SingleImageGallery';
 import { type Item } from '../interfaces';
 
 interface DetailProps {
@@ -56,24 +55,13 @@ export default function Detail({
     case 'png':
     case 'gif':
       return (
-        <Gallery>
-          <RPGItem
-            original={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
-            thumbnail={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
-            width={width}
-            height={height}
-          >
-            {({ ref, open }) => (
-              <img
-                className='detail-block__img'
-                alt={file}
-                src={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
-                ref={ref as React.MutableRefObject<HTMLImageElement>}
-                onClick={open}
-              />
-            )}
-          </RPGItem>
-        </Gallery>
+        <SingleImageGallery
+          className="detail-block__img"
+          alt={file}
+          src={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
+          width={width}
+          height={height}
+        />
       );
     case 'vimeo':
       return (

@@ -1,6 +1,9 @@
 import React, { useMemo, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useScrollDirection } from 'react-use-scroll-direction';
+import { isBrowser } from 'react-device-detect';
+import { Gallery, Item } from 'react-photoswipe-gallery';
+
 import DetailSection from './DetailSection';
 import projects from '../data/projects.js';
 import { getWidthAndHeight } from '../utils/utils';
@@ -31,7 +34,7 @@ export default function InfoPage(): JSX.Element {
   const infoPageRef = useRef<HTMLHeadingElement>(null);
   const infoPageCapRef = useRef<HTMLHeadingElement>(null);
   const clientWidth = document.body.clientWidth;
-  const { height: coverHeight } = getWidthAndHeight(clientWidth, '16x9');
+  const { height: coverHeight, width: coverWidth } = getWidthAndHeight(clientWidth, '16x9');
   const { isScrollingDown } = useScrollDirection();
 
   const innerHeight = window.innerHeight;
@@ -50,29 +53,54 @@ export default function InfoPage(): JSX.Element {
   );
 
   const infoPageCover = useMemo(() => {
-    let frontImgSrc;
-    let backImgSrc;
+    let frontImgSrc = '';
+    let backImgSrc = '';
     try {
       frontImgSrc = require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.jpg`);
       backImgSrc = require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.jpg`);
     } catch (e) {}
 
+    if (backImgSrc === '') backImgSrc = frontImgSrc;
+
     return (
       <div className='info-page__cover' style={coverStyle}>
-        <img
-          className='hoverable-img--front'
-          src={frontImgSrc}
-          alt={`${name}`}
-          width='1920px'
-          height='1080px'
-        />
-        <img
-          className='hoverable-img'
-          src={backImgSrc ?? frontImgSrc}
-          alt={`${name}`}
-          width='1920px'
-          height='1080px'
-        />
+        <Gallery>
+          <Item
+            alt={`${id}_cover-front`}
+            // For browsers, users see the back image when clicking on the area because of the hover effect (opacity: 0)
+            // On the other hand, users see the front image on mobiles. So the srcs need to be adjusted here.
+            original={isBrowser ? backImgSrc : frontImgSrc}
+            thumbnail={isBrowser ? backImgSrc : frontImgSrc}
+            width={coverWidth}
+            height={coverHeight}
+          >
+            {({ ref, open }) => (
+              <img
+                className='hoverable-img--front'
+                alt={`${id}_cover-front`}
+                src={frontImgSrc}
+                ref={ref as React.MutableRefObject<HTMLImageElement>}
+                onClick={open}
+              />
+            )}
+          </Item>
+          <Item
+            alt={`${id}_cover-back`}
+            original={isBrowser ? frontImgSrc : backImgSrc}
+            thumbnail={isBrowser ? frontImgSrc : backImgSrc}
+            width={coverWidth}
+            height={coverHeight}
+          >
+            {({ ref }) => (
+              <img
+                className='hoverable-img'
+                alt={`${id}_cover-back`}
+                src={backImgSrc}
+                ref={ref as React.MutableRefObject<HTMLImageElement>}
+              />
+            )}
+          </Item>
+        </Gallery>
         <div className='info-page__caption rfs-main' ref={infoPageCapRef}>
           {year}
           {duration !== '' ? <span> / {duration}</span> : null}

@@ -1,10 +1,20 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import ProjectCard from './ProjectCard';
-import projects from '../data/projects.js';
 
-export default function ProjectGrid(): JSX.Element {
+import ProjectCard from './ProjectCard';
+import {
+  type Projects,
+  type Misc
+} from '../interfaces';
+
+interface ProjectGridProps {
+  projects: Projects | Misc;
+}
+
+export default function ProjectGrid({
+  projects
+}: ProjectGridProps): JSX.Element {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -23,12 +33,12 @@ export default function ProjectGrid(): JSX.Element {
           desktop: 6
         }}
       >
-        {Object.entries(projects).map(([key, value]) => (
-          <Grid key={key} mobileOld={12} mobile={6} laptop={4}>
+        {Object.values(projects).map((project) => (
+          <Grid key={project.id} mobileOld={12} mobile={6} laptop={4}>
             <ProjectCard
-              id={value.id}
-              name={value.name}
-              subtitle={value.subtitle}
+              id={project.id}
+              name={project.name}
+              subtitle={project.subtitle}
             />
           </Grid>
         ))}

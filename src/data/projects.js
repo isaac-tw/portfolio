@@ -1,3 +1,4 @@
+import aCupOfPC from './a-cup-of-pc.json';
 import candleChair from './candle-chair.json';
 import duplo from './duplo.json';
 import deepsense from './deepsense';
@@ -8,7 +9,7 @@ import rebalance from './rebalance';
 import remoteControlRedesign from './remote-control-redesign.json';
 import searchingBall from './searching-ball.json';
 
-const projects = {
+export const projects = {
   rebalance,
   'remote-control-redesign': remoteControlRedesign,
   luggageplus,
@@ -20,4 +21,11 @@ const projects = {
   'searching-ball': searchingBall
 };
 
-export default projects;
+export const misc = {
+  'a-cup-of-pc': aCupOfPC
+};
+
+export default {
+  ...projects,
+  ...misc
+};

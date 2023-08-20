@@ -14,38 +14,53 @@ export default function ProjectCard({
   name,
   subtitle
 }: ProjectCardProps): JSX.Element {
-  let frontImgSrc;
-  let backImgSrc;
+  let frontImgSrc = '';
+  let backImgSrc = '';
   try {
     frontImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`);
     backImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`);
   } catch (e) {}
 
+  if (backImgSrc === '') backImgSrc = frontImgSrc;
+
+  // Although this might be a rare case,
+  // LazyLoad can make <img /> with the same src into different assets
+  const thumbnail = (
+    <LazyLoad once offset={200}>
+      <div>
+        <img
+          className='hoverable-img--front'
+          src={frontImgSrc}
+          alt={`${name}`}
+          width='1920px'
+          height='1080px'
+        />
+        <img
+          className='hoverable-img'
+          src={backImgSrc}
+          alt={`${name}`}
+          width='1920px'
+          height='1080px'
+        />
+      </div>
+    </LazyLoad>
+  );
+
   return (
     <div className='project-card'>
       <div className='project-card__image-section'>
-        <Link to={`/work/${id}`}>
-          {/* Although this might be a rare case, */}
-          {/* LazyLoad can make <img /> with the same src into different assets */}
-          <LazyLoad once offset={200}>
-            <div>
-              <img
-                className='hoverable-img--front'
-                src={frontImgSrc}
-                alt={`${name}`}
-                width='1920px'
-                height='1080px'
-              />
-              <img
-                className='hoverable-img'
-                src={backImgSrc ?? frontImgSrc}
-                alt={`${name}`}
-                width='1920px'
-                height='1080px'
-              />
-            </div>
-          </LazyLoad>
-        </Link>
+        {/* TODO: Update condition for other external links */}
+        {(id !== 'a-cup-of-pc')
+          ? <Link to={`/work/${id}`}>{thumbnail}</Link>
+          : (
+            <a
+              href='https://www.instructables.com/A-Cup-of-PC/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              {thumbnail}
+            </a>
+          )}
       </div>
       <Tooltip title={name}>
         <div className='project-card__title rfs-main'>{name}</div>

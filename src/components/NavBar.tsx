@@ -13,13 +13,7 @@ export default function NavBar(): JSX.Element {
       <nav className='elements'>
         <NavLink to='/'>Work</NavLink>
         <div className='divider'>/</div>
-        <a
-          href='https://www.instructables.com/A-Cup-of-PC/'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          misc.
-        </a>
+        <NavLink to='misc'>misc.</NavLink>
         <div className='divider'>/</div>
         <NavLink to='about'>About</NavLink>
         <div className='divider'>/</div>

@@ -64,6 +64,11 @@ export interface Projects {
   luggageplus: Project;
   magprint: Project;
   'o-assist': Project;
+  rebalance: Project;
   'remote-control-redesign': Project;
   'searching-ball': Project;
+}
+
+export interface Misc {
+  'a-cup-of-pc': Project;
 }

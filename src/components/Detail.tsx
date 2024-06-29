@@ -51,9 +51,7 @@ export default function Detail({
         </div>
       );
     }
-    case 'jpg':
-    case 'png':
-    case 'gif':
+    case 'webp':
       return (
         <SingleImageGallery
           className="detail-block__img"

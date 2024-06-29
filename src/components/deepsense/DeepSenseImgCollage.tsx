@@ -10,7 +10,7 @@ export default function DeepSenseImgCollage(): JSX.Element {
           <SingleImageGallery
             className='detail-block__img'
             alt='details-04'
-            src={require('../../assets/deepsense/details/deepsense_details-03_IsaacHuang.jpg')}
+            src={require('../../assets/deepsense/details/deepsense_details-03_IsaacHuang.webp')}
             width={1920}
             height={1080}
           />
@@ -20,7 +20,7 @@ export default function DeepSenseImgCollage(): JSX.Element {
         <div className='deepsense-img-collage__right'>
           <SingleImageGallery
             alt='details-06'
-            src={require('../../assets/deepsense/details/deepsense_details-04_IsaacHuang.jpg')}
+            src={require('../../assets/deepsense/details/deepsense_details-04_IsaacHuang.webp')}
             width={1080}
             height={1080}
           />

@@ -17,8 +17,8 @@ export default function ProjectCard({
   let frontImgSrc = '';
   let backImgSrc = '';
   try {
-    frontImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.jpg`);
-    backImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.jpg`);
+    frontImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`);
+    backImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`);
   } catch (e) {}
 
   if (backImgSrc === '') backImgSrc = frontImgSrc;

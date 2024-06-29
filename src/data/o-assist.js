@@ -20,19 +20,19 @@ const details = [
     {
       dimensions: '1920x1080',
       file: 'details-01',
-      format: 'jpg'
+      format: 'webp'
     }
   ],
   [
     {
       dimensions: '1080x1080',
       file: 'details-02',
-      format: 'jpg'
+      format: 'webp'
     },
     {
       dimensions: '1080x1080',
       file: 'details-03',
-      format: 'jpg'
+      format: 'webp'
     }
   ],
   [
@@ -47,21 +47,21 @@ const details = [
     {
       dimensions: '1920x1080',
       file: 'details-07',
-      format: 'jpg'
+      format: 'webp'
     }
   ],
   [
     {
       dimensions: '1920x1080',
       file: 'details-08',
-      format: 'jpg'
+      format: 'webp'
     }
   ],
   [
     {
       dimensions: '1920x1080',
       file: 'details-09',
-      format: 'jpg'
+      format: 'webp'
     }
   ]
 ];

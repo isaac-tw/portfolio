@@ -20,7 +20,7 @@ export default function ErrorPage({
         </div>
         <img
           className='error-page__img'
-          src={require('../assets/misc/profile_IsaacHuang.png')}
+          src={require('../assets/misc/profile_IsaacHuang.webp')}
           alt='profile_IsaacHuang'
         />
       </div>

@@ -24,14 +24,14 @@ const details = [
     {
       dimensions: '2560x914',
       file: 'details-01',
-      format: 'png'
+      format: 'webp'
     }
   ],
   [
     {
       dimensions: '1920x1080',
       file: 'details-02',
-      format: 'png'
+      format: 'webp'
     }
   ],
   [

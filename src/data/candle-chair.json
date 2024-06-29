@@ -17,35 +17,35 @@
       {
         "dimensions": "A3",
         "file": "details-01",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-02",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-03",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-04",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-05",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
@@ -55,28 +55,28 @@
       {
         "dimensions": "679x595",
         "file": "details-06",
-        "format": "gif"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-07",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-08",
-        "format": "jpg"
+        "format": "webp"
       }
     ],
     [
       {
         "dimensions": "A3",
         "file": "details-09",
-        "format": "jpg"
+        "format": "webp"
       }
     ]
   ]

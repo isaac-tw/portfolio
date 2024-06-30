@@ -53,12 +53,8 @@ export default function InfoPage(): JSX.Element {
   );
 
   const infoPageCover = useMemo(() => {
-    let frontImgSrc = '';
-    let backImgSrc = '';
-    try {
-      frontImgSrc = new URL(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.webp`, import.meta.url).href;
-      backImgSrc = new URL(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.webp`, import.meta.url).href;
-    } catch (e) {}
+    const frontImgSrc = new URL(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.webp`, import.meta.url).href;
+    let backImgSrc = new URL(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.webp`, import.meta.url).href;
 
     if (backImgSrc.includes('undefined')) backImgSrc = frontImgSrc;
 

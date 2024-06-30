@@ -14,12 +14,8 @@ export default function ProjectCard({
   name,
   subtitle
 }: ProjectCardProps): JSX.Element {
-  let frontImgSrc = '';
-  let backImgSrc = '';
-  try {
-    frontImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`, import.meta.url).href;
-    backImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`, import.meta.url).href;
-  } catch (e) {}
+  const frontImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`, import.meta.url).href;
+  let backImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`, import.meta.url).href;
 
   if (backImgSrc.includes('undefined')) backImgSrc = frontImgSrc;
 

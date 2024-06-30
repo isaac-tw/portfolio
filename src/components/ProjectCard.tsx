@@ -32,15 +32,15 @@ export default function ProjectCard({
           className='hoverable-img--front'
           src={frontImgSrc}
           alt={`${name}`}
-          width='1920px'
-          height='1080px'
+          width='960px'
+          height='540px'
         />
         <img
           className='hoverable-img'
           src={backImgSrc}
           alt={`${name}`}
-          width='1920px'
-          height='1080px'
+          width='960px'
+          height='540px'
         />
       </div>
     </LazyLoad>

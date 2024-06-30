@@ -20,7 +20,7 @@ export default function UnderConstruction({
         </div>
         <img
           className='under-construction__img'
-          src={require('../../assets/misc/profile_IsaacHuang.webp')}
+          src={new URL('../../assets/misc/profile_IsaacHuang.webp', import.meta.url).href}
           alt='profile_IsaacHuang'
         />
       </div>

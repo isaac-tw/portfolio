@@ -56,11 +56,11 @@ export default function InfoPage(): JSX.Element {
     let frontImgSrc = '';
     let backImgSrc = '';
     try {
-      frontImgSrc = require(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.webp`);
-      backImgSrc = require(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.webp`);
+      frontImgSrc = new URL(`../assets/${id}/covers/${id}_cover-01_IsaacHuang.webp`, import.meta.url).href;
+      backImgSrc = new URL(`../assets/${id}/covers/${id}_cover-02_IsaacHuang.webp`, import.meta.url).href;
     } catch (e) {}
 
-    if (backImgSrc === '') backImgSrc = frontImgSrc;
+    if (backImgSrc.includes('undefined')) backImgSrc = frontImgSrc;
 
     return (
       <div className='info-page__cover' style={coverStyle}>

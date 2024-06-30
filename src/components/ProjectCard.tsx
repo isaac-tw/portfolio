@@ -17,11 +17,11 @@ export default function ProjectCard({
   let frontImgSrc = '';
   let backImgSrc = '';
   try {
-    frontImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`);
-    backImgSrc = require(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`);
+    frontImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`, import.meta.url).href;
+    backImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`, import.meta.url).href;
   } catch (e) {}
 
-  if (backImgSrc === '') backImgSrc = frontImgSrc;
+  if (backImgSrc.includes('undefined')) backImgSrc = frontImgSrc;
 
   // Although this might be a rare case,
   // LazyLoad can make <img /> with the same src into different assets

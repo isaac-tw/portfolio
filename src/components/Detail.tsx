@@ -56,7 +56,7 @@ export default function Detail({
         <SingleImageGallery
           className="detail-block__img"
           alt={file}
-          src={require(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`)}
+          src={new URL(`../assets/${id}/details/${id}_${file}_IsaacHuang.${format}`, import.meta.url).href}
           width={width}
           height={height}
         />

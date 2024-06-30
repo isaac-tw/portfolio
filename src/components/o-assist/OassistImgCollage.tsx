@@ -10,14 +10,14 @@ export default function OassistImgCollage(): JSX.Element {
           <SingleImageGallery
             className='detail-block__img'
             alt='details-04'
-            src={require('../../assets/o-assist/details/o-assist_details-04_IsaacHuang.webp')}
+            src={new URL('../../assets/o-assist/details/o-assist_details-04_IsaacHuang.webp', import.meta.url).href}
             width={1920}
             height={1080}
           />
           <SingleImageGallery
             className='detail-block__img'
             alt='details-05'
-            src={require('../../assets/o-assist/details/o-assist_details-05_IsaacHuang.webp')}
+            src={new URL('../../assets/o-assist/details/o-assist_details-05_IsaacHuang.webp', import.meta.url).href}
             width={1920}
             height={1080}
           />
@@ -27,7 +27,7 @@ export default function OassistImgCollage(): JSX.Element {
         <div className='oassist-img-collage__right'>
           <SingleImageGallery
             alt='details-06'
-            src={require('../../assets/o-assist/details/o-assist_details-06_IsaacHuang.webp')}
+            src={new URL('../../assets/o-assist/details/o-assist_details-06_IsaacHuang.webp', import.meta.url).href}
             width={454}
             height={806}
           />

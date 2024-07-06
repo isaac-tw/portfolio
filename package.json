@@ -37,7 +37,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "pnpm run build",
-    "deploy": "echo www.isaac-tw.dev > ./build/CNAME && gh-pages -d build"
+    "deploy": "gh-pages -d build --cname 'www.isaac-tw.dev'"
   },
   "eslintConfig": {
     "extends": [
@@ -75,7 +75,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^6.1.1",
     "typescript": "*"
   },
   "pnpm": {

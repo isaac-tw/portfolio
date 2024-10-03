@@ -5,7 +5,7 @@
   "Education": [
     {
       "Degree": "MA / MSc, Innovation Design Engineering",
-      "School": "Royal College of Art / Imperial College London",
+      "School": "Imperial College London / Royal College of Art",
       "Duration": "2018 - 2020",
       "Additional": "Scholarship: GSSA, Ministry of Education, Taiwan"
     },
@@ -86,9 +86,8 @@
   "Skill": [
     { "Language": "Mandarin (Native), English (Fluent)" },
     { "Front-end": "HTML, CSS, JavaScript, TypeScript, React, Redux, Jest, Vue.js" },
-    { "Programming": "C, C++, C#, Java, Python" },
     { "3D Modeling": "Alias, KeyShot" },
-    { "Adobe": "Photoshop, Illustrator, InDesign, After Effects" },
-    { "Other": "Figma, Arduino, Unity 3D, MS Office, MS Windows, Mac OS" }
+    { "Adobe": "Photoshop, Illustrator, InDesign" },
+    { "Other": "Figma, Arduino" }
   ]
 }

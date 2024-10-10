@@ -1,5 +1,5 @@
 import React, { useMemo, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, type LoaderFunctionArgs } from 'react-router-dom';
 import { useScrollDirection } from 'react-use-scroll-direction';
 import { isBrowser } from 'react-device-detect';
 import { Gallery, Item } from 'react-photoswipe-gallery';
@@ -9,8 +9,7 @@ import projects from '../data/projects.js';
 import { getWidthAndHeight } from '../utils/utils';
 import { type Projects } from '../interfaces';
 
-// TODO: Update { params }: any
-export async function loader({ params }: any): Promise<Response | undefined> {
+export async function loader({ params }: LoaderFunctionArgs): Promise<Response | undefined> {
   const project = projects[params.projectId as keyof Projects];
   if (project !== undefined) {
     return new Response('', {

@@ -1,4 +1,3 @@
-import React from 'react';
 import Grid from '@mui/material/Unstable_Grid2';
 import SingleImageGallery from '../shared/SingleImageGallery';
 

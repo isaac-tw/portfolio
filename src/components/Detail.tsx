@@ -1,4 +1,4 @@
-import React from 'react';
+import { createElement } from 'react';
 import SingleImageGallery from './shared/SingleImageGallery';
 import { type Item } from '../interfaces';
 
@@ -79,7 +79,7 @@ export default function Detail({
       );
     case 'component':
       return component !== undefined
-        ? React.createElement(component)
+        ? createElement(component)
         : null;
     default:
       return null;

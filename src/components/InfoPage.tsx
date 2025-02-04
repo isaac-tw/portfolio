@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from 'react';
+import { useMemo, useRef, type MutableRefObject } from 'react';
 import { useParams, type LoaderFunctionArgs } from 'react-router-dom';
 import { useScrollDirection } from 'react-use-scroll-direction';
 import { isBrowser } from 'react-device-detect';
@@ -74,7 +74,7 @@ export default function InfoPage(): JSX.Element {
                 className='hoverable-img--front'
                 alt={`${id}_cover-front`}
                 src={frontImgSrc}
-                ref={ref as React.MutableRefObject<HTMLImageElement>}
+                ref={ref as MutableRefObject<HTMLImageElement>}
                 onClick={open}
               />
             )}
@@ -91,7 +91,7 @@ export default function InfoPage(): JSX.Element {
                 className='hoverable-img'
                 alt={`${id}_cover-back`}
                 src={backImgSrc}
-                ref={ref as React.MutableRefObject<HTMLImageElement>}
+                ref={ref as MutableRefObject<HTMLImageElement>}
               />
             )}
           </Item>

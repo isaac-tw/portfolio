@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';

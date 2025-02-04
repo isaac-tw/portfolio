@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 
 interface SingleImageGalleryProps {

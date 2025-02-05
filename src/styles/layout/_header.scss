@@ -1,4 +1,4 @@
-.nav {
+.navbar {
   background-color: white;
 
   align-items: flex-end;
@@ -13,31 +13,37 @@
   padding-bottom: 6vw;
 
   @include for-mobile-up {
-      height: 14.5vw;
-      margin-bottom: 5vw;
-      padding-bottom: 3.5vw;
+    height: 14.5vw;
+    margin-bottom: 5vw;
+    padding-bottom: 3.5vw;
   }
+
   @include for-tablet-up {
-      height: 6.5vw;
-      margin-bottom: 4.5vw;
-      padding-bottom: 2vw;
+    height: 6.5vw;
+    margin-bottom: 4.5vw;
+    padding-bottom: 2vw;
   }
-}
 
-.nav__bar {
-  align-items: center;
-  display: block;
-  justify-content: space-between;
-  width: 100%;
+  &__container {
+    align-items: center;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
 
-  @include for-mobile-up {
+    @include for-mobile-up {
+      display: flex;
+    }
+  }
+
+  &__name {
+    align-items: center;
     display: flex;
+    justify-content: space-between;
   }
 
-  .icon {
+  &__full-name {
     color: $main-blue;
     font-weight: bold;
-    text-align: left;
     text-decoration: underline;
 
     display: flex;
@@ -50,7 +56,34 @@
     }
   }
 
-  .tabs {
+  &__first-name {
+    span {
+      display: none;
+
+      @include for-tablet-up {
+        display: block;
+      }
+    }
+  }
+
+  &__first-name::after {
+    content: 'Isaac\00a0';
+
+    @include for-tablet-up {
+      content: unset;
+    }
+  }
+
+  &__icon-buttons {
+    display: block;
+    white-space: nowrap;
+
+    @include for-mobile-up {
+      display: none;
+    }
+  }
+
+  &__tabs {
     color: $dark-grey;
 
     display: flex;
@@ -59,29 +92,31 @@
     @include for-mobile-up {
       margin-top: 0;
     }
+  }
 
-    .elements {
-      display: flex;
+  &__tab-list {
+    display: flex;
+  }
 
-      a,
-      span {
-        @media (hover: hover) {
-          &:hover {
-            cursor: pointer;
-            opacity: 0.4;
-          }
-        }
+  &__tab-divider {
+    text-align: center;
 
-        &.active {
-          opacity: 0.4;
-        }
+    width: 20px;
+
+    &--responsive {
+      display: none;
+
+      @include for-mobile-up {
+        display: block;
       }
+    }
+  }
 
-      .divider {
-        text-align: center;
+  &__tab-link {
+    display: none;
 
-        width: 20px;
-      }
+    @include for-mobile-up {
+      display: block;
     }
   }
 }

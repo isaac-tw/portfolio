@@ -1,3 +1,5 @@
+import { EMAIL_ADDRESS } from "../../utils/constants";
+
 interface UnderConstructionProps {
   subject: string;
 }
@@ -25,7 +27,7 @@ export default function UnderConstruction({
       <div className='under-construction__inquiries'>
         Please feel free to contact me for any inquiries:
         <br />
-        <a href='mailto:isaac.huang.tw@gmail.com'>isaac.huang.tw@gmail.com</a>
+        <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
       </div>
     </div>
   );

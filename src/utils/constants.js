@@ -1,3 +1,6 @@
+export const EMAIL_ADDRESS = 'isaac.huang.tw@gmail.com';
+export const GITHUB_LINK = 'https://github.com/isaac-tw';
+
 /* CSS Constants */
 export const mainBlue = '#308CE0';
 export const darkGrey = 'rgba(0, 0, 0, 0.75)';

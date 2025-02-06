@@ -1,9 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import { Email, GitHub } from '@mui/icons-material';
-
-const gitHubLink = 'https://github.com/isaac-tw';
-const mailtoLink = 'mailto:isaac.huang.tw@gmail.com';
+import { EMAIL_ADDRESS, GITHUB_LINK } from '../utils/constants';
 
 const NameArea = () => (
   <div className='navbar__name'>
@@ -16,13 +14,13 @@ const NameArea = () => (
     <div className='navbar__icon-buttons'>
       <IconButton
         aria-label='GitHub'
-        href={gitHubLink}
+        href={GITHUB_LINK}
         rel='noreferrer noopener'
         target='_blank'
       >
         <GitHub fontSize='large' />
       </IconButton>
-      <IconButton aria-label='Email' href={mailtoLink}>
+      <IconButton aria-label='Email' href={`mailto:${EMAIL_ADDRESS}`}>
         <Email fontSize='large' />
       </IconButton>
     </div>
@@ -42,14 +40,14 @@ const TabsArea = () => (
       <Link
         aria-label='GitHub'
         className='navbar__tab-link'
-        to={gitHubLink}
+        to={GITHUB_LINK}
         rel='noreferrer noopener'
         target='_blank'
       >
         GitHub
       </Link>
       <div className='navbar__tab-divider navbar__tab-divider--responsive'>/</div>
-      <Link className='navbar__tab-link' to={mailtoLink}>
+      <Link className='navbar__tab-link' to={`mailto:${EMAIL_ADDRESS}`}>
         Contact
       </Link>
     </nav>

@@ -26,14 +26,14 @@ export default function ProjectCard({
         <img
           className='hoverable-img--front'
           src={frontImgSrc}
-          alt={`${name}`}
+          alt={name}
           width='960px'
           height='540px'
         />
         <img
           className='hoverable-img'
           src={backImgSrc}
-          alt={`${name}`}
+          alt={name}
           width='960px'
           height='540px'
         />

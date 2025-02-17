@@ -5,7 +5,7 @@ import { isBrowser } from 'react-device-detect';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 
 import DetailSection from './DetailSection';
-import projects from '../data/projects.js';
+import projects from '../data/projects';
 import { getWidthAndHeight } from '../utils/utils';
 import { type Projects } from '../interfaces';
 
@@ -26,7 +26,6 @@ export default function InfoPage(): JSX.Element {
     name,
     year,
     duration,
-    // TODO: Make it optional -> fix ts error
     note,
     details
   } = projects[projectId as keyof Projects];
@@ -98,10 +97,8 @@ export default function InfoPage(): JSX.Element {
         </Gallery>
         <div className='info-page__caption rfs-main' ref={infoPageCapRef}>
           {year}
-          {duration !== '' ? <span> / {duration}</span> : null}
-          {note !== undefined && note !== ''
-            ? <div className='info-page__caption--note rfs-cap'>{note}</div>
-            : null}
+          {duration && <span> / {duration}</span>}
+          {note && <div className='info-page__caption--note rfs-cap'>{note}</div>}
         </div>
       </div>
     );

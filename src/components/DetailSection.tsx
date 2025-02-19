@@ -21,7 +21,7 @@ export default function DetailSection({
   detail,
   id,
   isScrollingDown
-}: DetailSectionProps): JSX.Element {
+}: DetailSectionProps) {
   const containerRef = useRef<HTMLHeadingElement>(null);
   const { inViewport } = useInViewport(containerRef);
 

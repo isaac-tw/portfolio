@@ -1,7 +1,7 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 import NavBar from './NavBar';
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <div>
       <NavBar />

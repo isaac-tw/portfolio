@@ -4,7 +4,7 @@ interface ErrorPageProps {
 
 export default function ErrorPage({
   subject
-}: ErrorPageProps): JSX.Element {
+}: ErrorPageProps) {
   return (
     <div className='error-page'>
       <div className='error-page__content'>

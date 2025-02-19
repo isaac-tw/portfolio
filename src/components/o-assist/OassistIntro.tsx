@@ -1,4 +1,4 @@
-export default function OassistIntro(): JSX.Element {
+export default function OassistIntro() {
   return (
     <div className='intro'>
       <div className='intro__title'>

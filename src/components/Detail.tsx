@@ -20,7 +20,7 @@ export default function Detail({
   },
   width,
   height
-}: DetailProps): JSX.Element | null {
+}: DetailProps) {
   if (file === undefined) return null;
 
   switch (format) {

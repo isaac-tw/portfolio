@@ -1,4 +1,4 @@
-export default function DeepSenseIntro(): JSX.Element {
+export default function DeepSenseIntro() {
   return (
     <div className='intro'>
       <div className='intro__title'>An alternative for Yield Estimation</div>

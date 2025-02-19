@@ -15,7 +15,7 @@ export default function SingleImageGallery({
   src,
   width,
   height
-}: SingleImageGalleryProps): JSX.Element {
+}: SingleImageGalleryProps) {
   return (
     <Gallery>
       <Item

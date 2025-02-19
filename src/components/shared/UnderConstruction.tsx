@@ -6,7 +6,7 @@ interface UnderConstructionProps {
 
 export default function UnderConstruction({
   subject = 'Content'
-}: UnderConstructionProps): JSX.Element {
+}: UnderConstructionProps) {
   return (
     <div className='under-construction'>
       <div className='under-construction__content'>

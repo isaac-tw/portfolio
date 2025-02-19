@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import SingleImageGallery from '../shared/SingleImageGallery';
 
-export default function DeepSenseImgCollage(): JSX.Element {
+export default function DeepSenseImgCollage() {
   return (
     <Grid className='deepsense-img-collage' container>
       <Grid mobileOld={12} mobile={12} laptop={7.62}>

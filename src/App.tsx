@@ -1,7 +1,7 @@
 import { RouterProvider } from 'react-router-dom';
 import router from './routes/configure';
 
-function App(): JSX.Element {
+function App() {
   return (
     <div className='App'>
       <RouterProvider router={router} />

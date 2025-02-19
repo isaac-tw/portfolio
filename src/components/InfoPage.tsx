@@ -19,7 +19,7 @@ export async function loader({ params }: LoaderFunctionArgs): Promise<Response |
   }
 }
 
-export default function InfoPage(): JSX.Element {
+export default function InfoPage() {
   const { projectId } = useParams();
   const {
     id,

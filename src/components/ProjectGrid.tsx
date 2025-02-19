@@ -13,7 +13,7 @@ interface ProjectGridProps {
 
 export default function ProjectGrid({
   projects
-}: ProjectGridProps): JSX.Element {
+}: ProjectGridProps) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid

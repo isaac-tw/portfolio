@@ -3,7 +3,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import AboutItem from './AboutItem';
 import about from '../data/about.json';
 
-export default function AboutSection(): JSX.Element {
+export default function AboutSection() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid

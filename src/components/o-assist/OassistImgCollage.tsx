@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import SingleImageGallery from '../shared/SingleImageGallery';
 
-export default function OassistImgCollage(): JSX.Element {
+export default function OassistImgCollage() {
   return (
     <Grid className='oassist-img-collage' container>
       <Grid mobileOld={12} mobile={12} laptop={7}>

@@ -15,7 +15,7 @@ interface AboutItemProps {
 export default function AboutItem({
   infoKey,
   info
-}: AboutItemProps): JSX.Element | null {
+}: AboutItemProps) {
   switch (infoKey) {
     case 'Description':
       return (

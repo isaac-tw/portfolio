@@ -12,7 +12,7 @@ export default function ProjectCard({
   id,
   name,
   subtitle
-}: ProjectCardProps): JSX.Element {
+}: ProjectCardProps) {
   const frontImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-01_IsaacHuang.webp`, import.meta.url).href;
   let backImgSrc = new URL(`../assets/${id}/thumbnails/${id}_thumbnail-02_IsaacHuang.webp`, import.meta.url).href;
 

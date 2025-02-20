@@ -23,7 +23,6 @@ export default function InfoPage() {
   const { projectId } = useParams();
   const {
     id,
-    name,
     year,
     duration,
     note,
@@ -102,7 +101,7 @@ export default function InfoPage() {
         </div>
       </div>
     );
-  }, [id, coverStyle, name, note, year, duration]);
+  }, [id, coverStyle, note, year, duration, coverHeight, coverWidth]);
 
   return (
     <div className='info-page' ref={infoPageRef}>

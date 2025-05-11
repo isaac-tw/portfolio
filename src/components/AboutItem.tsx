@@ -31,7 +31,6 @@ export default function AboutItem({
             const {
               Degree,
               School,
-              Duration,
               Additional
             } = item as Education;
 
@@ -39,7 +38,6 @@ export default function AboutItem({
               <div className='info-items' key={index}>
                 <div className='info-items__title rfs-main'>{Degree}</div>
                 <div className='info-items__subtitle rfs-main'>{School}</div>
-                <div className='info-items__caption rfs-cap'>{Duration}</div>
                 <div className='info-items__caption rfs-cap'>{Additional}</div>
               </div>
             );
@@ -54,7 +52,6 @@ export default function AboutItem({
             const {
               Title,
               'Company name': CompanyName,
-              Duration,
               Additional,
               url
             } = item as Experience;
@@ -79,7 +76,6 @@ export default function AboutItem({
               <div className='info-items' key={index}>
                 <div className='info-items__title rfs-main'>{Title}</div>
                 {CompanyNameDiv}
-                <div className='info-items__caption rfs-cap'>{Duration}</div>
                 <div className='info-items__caption rfs-cap'>{Additional}</div>
               </div>
             );
@@ -94,14 +90,12 @@ export default function AboutItem({
             const {
               Name,
               Organization,
-              Duration
             } = item as Activity;
 
             return (
               <div className='info-items' key={index}>
                 <div className='info-items__title rfs-main'>{Name}</div>
                 <div className='info-items__subtitle rfs-main'>{Organization}</div>
-                <div className='info-items__caption rfs-cap'>{Duration}</div>
               </div>
             );
           })}

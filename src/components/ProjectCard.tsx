@@ -2,6 +2,11 @@ import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
 
+const externalLinks: Record<string, string> = {
+  'a-cup-of-pc': 'https://www.instructables.com/A-Cup-of-PC/',
+  'auto-unfollow': 'https://chromewebstore.google.com/detail/fapolehlmicanpbmkakjkmlbjdfhcmmf?utm_source=item-share-cb',
+};
+
 interface ProjectCardProps {
   id: string;
   name: string;
@@ -44,18 +49,11 @@ export default function ProjectCard({
   return (
     <div className='project-card'>
       <div className='project-card__image-section'>
-        {/* TODO: Update condition for other external links */}
-        {(id !== 'a-cup-of-pc')
-          ? <Link to={`/work/${id}`}>{thumbnail}</Link>
-          : (
-            <a
-              href='https://www.instructables.com/A-Cup-of-PC/'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              {thumbnail}
-            </a>
-          )}
+        {externalLinks[id] ? (
+          <a href={externalLinks[id]} target='_blank' rel='noreferrer noopener'>
+            {thumbnail}
+          </a>
+        ) : <Link to={`/work/${id}`}>{thumbnail}</Link>}
       </div>
       <Tooltip title={name}>
         <div className='project-card__title rfs-main'>{name}</div>

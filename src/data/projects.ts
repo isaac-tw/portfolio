@@ -1,5 +1,6 @@
 import { Misc, Projects } from '../interfaces';
 import aCupOfPC from './a-cup-of-pc.json';
+import autoUnfollow from './auto-unfollow.json';
 import candleChair from './candle-chair.json';
 import deepsense from './deepsense';
 import duplo from './duplo.json';
@@ -23,6 +24,7 @@ export const projects: Projects = {
 };
 
 export const misc: Misc = {
+  'auto-unfollow': autoUnfollow,
   'a-cup-of-pc': aCupOfPC
 };
 

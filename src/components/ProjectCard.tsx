@@ -8,6 +8,11 @@ interface ProjectCardProps {
   subtitle: string;
 }
 
+const EXTERNAL_LINKS: Record<string, string> = {
+  'auto-unfollow': 'https://chromewebstore.google.com/detail/fapolehlmicanpbmkakjkmlbjdfhcmmf?utm_source=item-share-cb',
+  'a-cup-of-pc': 'https://www.instructables.com/A-Cup-of-PC/',
+};
+
 export default function ProjectCard({
   id,
   name,
@@ -41,15 +46,16 @@ export default function ProjectCard({
     </LazyLoad>
   );
 
+  const externalUrl = EXTERNAL_LINKS[id];
+
   return (
     <div className='project-card'>
       <div className='project-card__image-section'>
-        {/* TODO: Update condition for other external links */}
-        {(id !== 'a-cup-of-pc')
+        {!externalUrl
           ? <Link to={`/work/${id}`}>{thumbnail}</Link>
           : (
             <a
-              href='https://www.instructables.com/A-Cup-of-PC/'
+              href={externalUrl}
               target='_blank'
               rel='noreferrer noopener'
             >

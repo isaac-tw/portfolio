@@ -70,5 +70,6 @@ export interface Projects {
 }
 
 export interface Misc {
+  'auto-unfollow': Project;
   'a-cup-of-pc': Project;
 }

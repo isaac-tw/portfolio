@@ -16,7 +16,3 @@ export const getWidthAndHeight = (windowWidth, dimensions = '16x9') => {
     height: Math.floor(windowWidth * (1 - paddingAround) * heightRatio)
   };
 };
-
-export default {
-  getWidthAndHeight
-};

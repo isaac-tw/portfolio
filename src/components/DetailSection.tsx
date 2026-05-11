@@ -44,7 +44,7 @@ export default function DetailSection({
               laptop: 2
             }}
           >
-            {detail.map((item, index) => {
+            {detail.map((item) => {
               const { width, height } = getWidthAndHeight(
                 clientWidth,
                 item.dimensions
@@ -54,7 +54,7 @@ export default function DetailSection({
                   mobileOld={12}
                   mobile={12}
                   laptop={12 / detail.length}
-                  key={index}
+                  key={`${item.format}-${item.src || item.file || ''}`}
                 >
                   {/* The layout is a block after a block, so setting offset = height usually means
                   a long as a block is visible in viewport, we start loading the next image */}

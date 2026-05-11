@@ -2,16 +2,16 @@ export const EMAIL_ADDRESS = 'isaac.huang.tw@gmail.com';
 export const GITHUB_LINK = 'https://github.com/isaac-tw';
 
 /* CSS Constants */
-export const mainBlue = '#308CE0';
-export const darkGrey = 'rgba(0, 0, 0, 0.75)';
-export const lightGrey = 'rgba(0, 0, 0, 0.45)';
+const mainBlue = '#308CE0';
+const darkGrey = 'rgba(0, 0, 0, 0.75)';
+const lightGrey = 'rgba(0, 0, 0, 0.45)';
 
 // Breakpoints
-export const screenMobileOld = 0;
-export const screenMobile = 350;
+const screenMobileOld = 0;
+const screenMobile = 350;
 export const screenTablet = 600;
-export const screenLaptop = 1024;
-export const screenDesktop = 1536;
+const screenLaptop = 1024;
+const screenDesktop = 1536;
 
 export const fadeTransitionProps = {
   easing: {
@@ -19,16 +19,4 @@ export const fadeTransitionProps = {
     exit: 'unset'
   },
   timeout: 800
-};
-
-export default {
-  mainBlue,
-  darkGrey,
-  lightGrey,
-  screenMobileOld,
-  screenMobile,
-  screenTablet,
-  screenLaptop,
-  screenDesktop,
-  fadeTransitionProps
 };

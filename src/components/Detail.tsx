@@ -74,7 +74,7 @@ export default function Detail({
               title={file}
             ></iframe>
           </div>
-          <script src='https://player.vimeo.com/api/player.js'></script>
+          <script defer src='https://player.vimeo.com/api/player.js'></script>
         </>
       );
     case 'component':

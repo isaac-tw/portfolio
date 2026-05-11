@@ -74,6 +74,14 @@ export default function InfoPage() {
                 src={frontImgSrc}
                 ref={ref as MutableRefObject<HTMLImageElement>}
                 onClick={open}
+                onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    open(e as unknown as React.MouseEvent<HTMLImageElement>);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
               />
             )}
           </Item>
@@ -107,13 +115,13 @@ export default function InfoPage() {
     <div className='info-page' ref={infoPageRef}>
       {infoPageCover}
       <div className='info-page__content'>
-        {details.map((detail, index) => (
+        {details.map((detail, detailIndex) => (
           <DetailSection
             clientWidth={clientWidth}
             detail={detail}
             id={id}
             isScrollingDown={isScrollingDown}
-            key={index}
+            key={`detail-${detailIndex}-${detail.map(d => d.format).join('-')}`}
           />
         ))}
       </div>

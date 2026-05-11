@@ -34,7 +34,7 @@ declare module '@mui/material/Typography' {
   }
 }
 
-export const baseTheme = {
+const baseTheme = {
   breakpoints: {
     values: {
       xs: 0,

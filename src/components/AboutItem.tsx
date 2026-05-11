@@ -27,7 +27,7 @@ export default function AboutItem({
       return (
         <>
           <div className='info-title rfs-main'>{infoKey}</div>
-          {info.map((item, index) => {
+          {info.map((item) => {
             const {
               Degree,
               School,
@@ -35,7 +35,7 @@ export default function AboutItem({
             } = item as Education;
 
             return (
-              <div className='info-items' key={index}>
+              <div className='info-items' key={`${School}-${Degree}`}>
                 <div className='info-items__title rfs-main'>{Degree}</div>
                 <div className='info-items__subtitle rfs-main'>{School}</div>
                 <div className='info-items__caption rfs-cap'>{Additional}</div>
@@ -48,7 +48,7 @@ export default function AboutItem({
       return (
         <>
           <div className='info-title rfs-main'>{infoKey}</div>
-          {info.map((item, index) => {
+          {info.map((item) => {
             const {
               Title,
               'Company name': CompanyName,
@@ -63,7 +63,6 @@ export default function AboutItem({
                   href={url}
                   target='_blank'
                   rel='noreferrer noopener'
-                  key={index}
                 >
                   {CompanyName}&nbsp;
                   <OpenInNewIcon />
@@ -73,7 +72,7 @@ export default function AboutItem({
             );
 
             return (
-              <div className='info-items' key={index}>
+              <div className='info-items' key={`${CompanyName}-${Title}`}>
                 <div className='info-items__title rfs-main'>{Title}</div>
                 {CompanyNameDiv}
                 <div className='info-items__caption rfs-cap'>{Additional}</div>
@@ -86,14 +85,14 @@ export default function AboutItem({
       return (
         <>
           <div className='info-title rfs-main'>{infoKey}</div>
-          {info.map((item, index) => {
+          {info.map((item) => {
             const {
               Name,
               Organization,
             } = item as Activity;
 
             return (
-              <div className='info-items' key={index}>
+              <div className='info-items' key={`${Name}-${Organization}`}>
                 <div className='info-items__title rfs-main'>{Name}</div>
                 <div className='info-items__subtitle rfs-main'>{Organization}</div>
               </div>

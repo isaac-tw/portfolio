@@ -47,7 +47,7 @@ export interface Item {
   src?: string;
 }
 
-export interface Project {
+interface Project {
   details: Item[][];
   duration: string;
   id: string;

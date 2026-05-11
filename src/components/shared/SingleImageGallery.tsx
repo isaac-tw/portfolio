@@ -32,6 +32,14 @@ export default function SingleImageGallery({
             src={src}
             ref={ref as React.MutableRefObject<HTMLImageElement>}
             onClick={open}
+            onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                open(e as unknown as React.MouseEvent<HTMLImageElement>);
+              }
+            }}
+            role="button"
+            tabIndex={0}
           />
         )}
       </Item>

@@ -82,8 +82,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-ga4:
-        specifier: ^1.4.1
-        version: 1.4.1
+        specifier: ^3.0.1
+        version: 3.0.1
       react-in-viewport:
         specifier: 1.0.0-alpha.29
         version: 1.0.0-alpha.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2064,8 +2064,8 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
-  react-ga4@1.4.1:
-    resolution: {integrity: sha512-ioBMEIxd4ePw4YtaloTUgqhQGqz5ebDdC4slEpLgy2sLx1LuZBC9iYCwDymTXzcntw6K1dHX183ulP32nNdG7w==}
+  react-ga4@3.0.1:
+    resolution: {integrity: sha512-GyCc01bSheWXjzGDyHsXMOqk/SP5Cf/JrcJTg4hcpKx4eeSwaJKpJUc+ipF4ffLTZkmabmf3ZGBv4OKHTXNXyA==}
 
   react-in-viewport@1.0.0-alpha.29:
     resolution: {integrity: sha512-48woFq8EUWl3WWAPeyPu5T5KR26G3q8Gs64YXMRQq7aIP5YBzHIN2GvoFwdXDhT19pwcOPmlkSAYWMt0+d3ydw==}
@@ -4724,7 +4724,7 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-ga4@1.4.1: {}
+  react-ga4@3.0.1: {}
 
   react-in-viewport@1.0.0-alpha.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

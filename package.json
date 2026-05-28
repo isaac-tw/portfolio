@@ -33,7 +33,7 @@
     "preview": "vite preview",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build --cname 'www.isaac-tw.dev'",
-    "build-deploy": "pnpm run build & pnpm run deploy"
+    "build-deploy": "pnpm run build && pnpm run deploy"
   },
   "eslintConfig": {
     "extends": [

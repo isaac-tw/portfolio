@@ -19,7 +19,10 @@ ReactGA.initialize([
   }
 ]);
 
-ReactGA.send('Hello pageview!');
+ReactGA.send({
+  hitType: 'pageview',
+  page: window.location.pathname + window.location.search
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
